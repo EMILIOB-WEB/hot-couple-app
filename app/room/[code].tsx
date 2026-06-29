@@ -1,5 +1,5 @@
 import { useLocalSearchParams } from "expo-router";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Alert,
   Platform,
@@ -13,9 +13,23 @@ import { GlassCard } from "../../src/components/GlassCard";
 import { Input } from "../../src/components/Input";
 import { Screen } from "../../src/components/Screen";
 import { categories } from "../../src/data/categories";
+import { getParticipantToken } from "../../src/lib/device";
 import { getRandomQuestionForUser } from "../../src/lib/questions";
+import {
+  getParticipants,
+  getRoomByCode,
+  joinRoom as joinRoomInSupabase,
+  markParticipantOffline
+} from "../../src/lib/rooms";
+import {
+  closeRound,
+  createRound,
+  getAnswersByRound,
+  getLatestActiveRound,
+  saveAnswer
+} from "../../src/lib/rounds";
+import { supabase } from "../../src/lib/supabase";
 import { colors } from "../../src/theme/colors";
-import { Question } from "../../src/types/question";
 
 const QUESTIONS_TO_UNLOCK = 5;
 
@@ -23,6 +37,25 @@ type Progress = {
   unlockedIndex: number;
   answersByCategory: Record<string, number>;
   usedQuestionIdsByCategory: Record<string, string[]>;
+};
+
+type Round = {
+  id: string;
+  room_id: string;
+  category: string;
+  question_id: string;
+  question_text: string;
+  created_by: string;
+  is_active: boolean;
+};
+
+type Answer = {
+  id: string;
+  answer_text: string;
+  participant_id: string;
+  participants?: {
+    nickname: string;
+  };
 };
 
 function getStorageKey(roomCode: string, nickname: string) {
@@ -50,26 +83,32 @@ export default function RoomScreen() {
   const params = useLocalSearchParams<{
     code: string;
     nickname?: string;
-    owner?: string;
   }>();
 
   const roomCode = String(params.code ?? "");
 
   const [nickname, setNickname] = useState(params.nickname ?? "");
-  const [joined, setJoined] = useState(Boolean(params.nickname));
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null);
+  const [joined, setJoined] = useState(false);
   const [answer, setAnswer] = useState("");
+
+  const [participants, setParticipants] = useState<any[]>([]);
+  const [roomId, setRoomId] = useState("");
+  const [participantId, setParticipantId] = useState("");
+  const [loadingJoin, setLoadingJoin] = useState(false);
+
+  const [activeRound, setActiveRound] = useState<Round | null>(null);
+  const [answers, setAnswers] = useState<Answer[]>([]);
+  const [savingAnswer, setSavingAnswer] = useState(false);
 
   const [progress, setProgress] = useState<Progress>(createEmptyProgress());
 
-  const roomUrl = useMemo(() => {
-    if (Platform.OS === "web" && typeof window !== "undefined") {
-      return window.location.href.split("?")[0];
-    }
+  const hasAnswered = answers.some(
+    (item) => item.participant_id === participantId
+  );
 
-    return `https://tu-dominio.com/room/${roomCode}`;
-  }, [roomCode]);
+  const category = activeRound
+    ? categories.find((item) => item.id === activeRound.category)
+    : null;
 
   useEffect(() => {
     if (!joined || !nickname.trim()) return;
@@ -80,8 +119,7 @@ export default function RoomScreen() {
 
       if (saved) {
         try {
-          const parsed = JSON.parse(saved);
-          setProgress(normalizeProgress(parsed));
+          setProgress(normalizeProgress(JSON.parse(saved)));
         } catch {
           setProgress(createEmptyProgress());
         }
@@ -90,6 +128,112 @@ export default function RoomScreen() {
       }
     }
   }, [joined, nickname, roomCode]);
+
+  useEffect(() => {
+  if (!participantId) return;
+
+  const markOffline = async () => {
+    try {
+      await markParticipantOffline(participantId);
+    } catch (error) {
+      console.log("Error marcando participante offline:", error);
+    }
+  };
+
+  if (Platform.OS === "web" && typeof window !== "undefined") {
+    window.addEventListener("beforeunload", markOffline);
+
+    return () => {
+      markOffline();
+      window.removeEventListener("beforeunload", markOffline);
+    };
+  }
+
+  return () => {
+    markOffline();
+  };
+}, [participantId]);
+
+
+  useEffect(() => {
+    const autoJoinOwner = async () => {
+      if (!params.nickname || joined) return;
+      await handleJoinRoom(String(params.nickname));
+    };
+
+    autoJoinOwner();
+  }, []);
+
+  useEffect(() => {
+    if (!roomId) return;
+
+    const channel = supabase
+      .channel(`room-${roomId}`)
+      .on(
+        "postgres_changes",
+        {
+          event: "*",
+          schema: "public",
+          table: "participants",
+          filter: `room_id=eq.${roomId}`
+        },
+        async () => {
+          const nextParticipants = await getParticipants(roomId);
+          setParticipants(nextParticipants);
+        }
+      )
+      .on(
+        "postgres_changes",
+        {
+          event: "*",
+          schema: "public",
+          table: "rounds",
+          filter: `room_id=eq.${roomId}`
+        },
+        async () => {
+          const latestRound = await getLatestActiveRound(roomId);
+          setActiveRound(latestRound);
+
+          if (latestRound) {
+            const nextAnswers = await getAnswersByRound(latestRound.id);
+            setAnswers(nextAnswers);
+          } else {
+            setAnswers([]);
+            setAnswer("");
+          }
+        }
+      )
+      .subscribe();
+
+    return () => {
+      supabase.removeChannel(channel);
+    };
+  }, [roomId]);
+
+  useEffect(() => {
+    if (!activeRound?.id) return;
+
+    const channel = supabase
+      .channel(`answers-${activeRound.id}`)
+      .on(
+        "postgres_changes",
+        {
+          event: "*",
+          schema: "public",
+          table: "answers",
+          filter: `round_id=eq.${activeRound.id}`
+        },
+        async () => {
+          const nextAnswers = await getAnswersByRound(activeRound.id);
+          setAnswers(nextAnswers);
+        }
+      )
+      .subscribe();
+
+    return () => {
+      supabase.removeChannel(channel);
+    };
+  }, [activeRound?.id]);
 
   const saveProgress = (nextProgress: Progress) => {
     setProgress(nextProgress);
@@ -100,27 +244,65 @@ export default function RoomScreen() {
     }
   };
 
-  const joinRoom = () => {
-    if (!nickname.trim()) {
+  const handleJoinRoom = async (nicknameOverride?: string) => {
+    const finalNickname = (nicknameOverride ?? nickname).trim();
+
+    if (!finalNickname) {
       Alert.alert("Falta tu apodo", "Escribe tu nombre para entrar.");
       return;
     }
 
-    setNickname(nickname.trim());
-    setJoined(true);
+    try {
+      setLoadingJoin(true);
+
+      const room = await getRoomByCode(roomCode);
+      const participant = await joinRoomInSupabase(
+        room.id,
+        finalNickname,
+        getParticipantToken()
+      );
+
+      const roomParticipants = await getParticipants(room.id);
+      const latestRound = await getLatestActiveRound(room.id);
+
+      setRoomId(room.id);
+      setParticipantId(participant.id);
+      setParticipants(roomParticipants);
+      setNickname(participant.nickname);
+      setActiveRound(latestRound);
+
+      if (latestRound) {
+        const nextAnswers = await getAnswersByRound(latestRound.id);
+        setAnswers(nextAnswers);
+      }
+
+      setJoined(true);
+    } catch (error: any) {
+      console.log(error);
+
+      Alert.alert(
+        "No se pudo entrar",
+        error.message || "La sala no está disponible."
+      );
+    } finally {
+      setLoadingJoin(false);
+    }
   };
 
-  const copyLink = async () => {
-    if (Platform.OS === "web" && navigator?.clipboard) {
-      await navigator.clipboard.writeText(roomUrl);
-      Alert.alert("Link copiado", "Compártelo con tu pareja.");
+  const startCategory = async (categoryId: string) => {
+    if (!roomId || !participantId) {
+      Alert.alert("Espera", "Todavía no se ha cargado la sala.");
       return;
     }
 
-    Alert.alert("Link privado", roomUrl);
-  };
+    if (activeRound) {
+      Alert.alert(
+        "Ronda activa",
+        "Ya hay una pregunta activa. Primero respondan o continúen."
+      );
+      return;
+    }
 
-  const startCategory = (categoryId: string) => {
     const usedIds = progress.usedQuestionIdsByCategory[categoryId] ?? [];
     const question = getRandomQuestionForUser(categoryId, usedIds);
 
@@ -132,22 +314,33 @@ export default function RoomScreen() {
       return;
     }
 
-    setSelectedCategory(categoryId);
-    setCurrentQuestion(question);
-    setAnswer("");
+    try {
+      const round = await createRound({
+        roomId,
+        category: categoryId,
+        questionId: question.id,
+        questionText: question.text,
+        participantId
+      });
+
+      setActiveRound(round);
+      setAnswers([]);
+      setAnswer("");
+    } catch (error) {
+      console.log(error);
+      Alert.alert("Error", "No se pudo crear la ronda.");
+    }
   };
 
-  const submitAnswer = () => {
-    if (!answer.trim() || !currentQuestion || !selectedCategory) {
-      Alert.alert("Falta tu respuesta", "Escribe una respuesta para continuar.");
-      return;
-    }
+  const updateLocalProgressAfterAnswer = () => {
+    if (!activeRound) return;
 
+    const selectedCategory = activeRound.category;
     const currentCount = progress.answersByCategory[selectedCategory] ?? 0;
     const nextCount = currentCount + 1;
 
     const selectedIndex = categories.findIndex(
-      (category) => category.id === selectedCategory
+      (item) => item.id === selectedCategory
     );
 
     let nextUnlockedIndex = progress.unlockedIndex;
@@ -171,31 +364,73 @@ export default function RoomScreen() {
       },
       usedQuestionIdsByCategory: {
         ...progress.usedQuestionIdsByCategory,
-        [selectedCategory]: [...previousUsedIds, currentQuestion.id]
+        [selectedCategory]: [...previousUsedIds, activeRound.question_id]
       }
     };
 
     saveProgress(nextProgress);
+  };
 
-    Alert.alert(
-      "Respuesta guardada",
-      nextUnlockedIndex > progress.unlockedIndex
-        ? "Nueva etapa desbloqueada."
-        : "Respuesta guardada. Sigue respondiendo."
-    );
+  const submitAnswer = async () => {
+    if (!answer.trim() || !activeRound || !roomId || !participantId) {
+      Alert.alert("Falta tu respuesta", "Escribe una respuesta para continuar.");
+      return;
+    }
 
-    setCurrentQuestion(null);
-    setSelectedCategory(null);
-    setAnswer("");
+    try {
+      setSavingAnswer(true);
+
+      await saveAnswer({
+        roomId,
+        roundId: activeRound.id,
+        participantId,
+        answerText: answer.trim()
+      });
+
+      updateLocalProgressAfterAnswer();
+
+      const nextAnswers = await getAnswersByRound(activeRound.id);
+      setAnswers(nextAnswers);
+      setAnswer("");
+    } catch (error: any) {
+      console.log(error);
+
+      Alert.alert(
+        "No se pudo guardar",
+        error.message || "Intenta nuevamente."
+      );
+    } finally {
+      setSavingAnswer(false);
+    }
+  };
+
+  const handleContinue = async () => {
+    if (!activeRound) return;
+
+    try {
+      await closeRound(activeRound.id);
+      setActiveRound(null);
+      setAnswers([]);
+      setAnswer("");
+    } catch (error) {
+      console.log(error);
+      Alert.alert("Error", "No se pudo cerrar la ronda.");
+    }
   };
 
   if (!joined) {
     return (
       <Screen>
-        <View style={styles.header}>
-          <Text style={styles.eyebrow}>SALA PRIVADA</Text>
-          <Text style={styles.title}>Entrar a la sala</Text>
-          <Text style={styles.subtitle}>Código: {roomCode}</Text>
+        <View style={styles.heroHeader}>
+          <View style={styles.appPill}>
+            <Text style={styles.appPillText}>PRIVATE COUPLE ROOM</Text>
+          </View>
+
+          <Text style={styles.heroTitle}>Entrar a la sala</Text>
+
+          <Text style={styles.heroSubtitle}>
+            Usa tu apodo. Esta sala es solo para dos personas mediante link.
+          </Text>
         </View>
 
         <GlassCard>
@@ -207,100 +442,186 @@ export default function RoomScreen() {
               onChangeText={setNickname}
               placeholder="Ej. Vale"
               autoCapitalize="words"
+              editable={!loadingJoin}
             />
 
-            <Button title="Entrar" onPress={joinRoom} />
+            <Button
+              title={loadingJoin ? "Entrando..." : "Entrar"}
+              onPress={() => handleJoinRoom()}
+              disabled={loadingJoin}
+            />
+
+            <Text style={styles.safeNote}>
+              Sin login. Tu progreso se guarda en este navegador.
+            </Text>
           </View>
         </GlassCard>
       </Screen>
     );
   }
 
-  if (currentQuestion) {
-    const category = categories.find((item) => item.id === selectedCategory);
-    const answered = progress.answersByCategory[selectedCategory ?? ""] ?? 0;
+  if (activeRound) {
+    const answered = progress.answersByCategory[activeRound.category] ?? 0;
+    const progressPercent = Math.min(answered / QUESTIONS_TO_UNLOCK, 1) * 100;
+    const bothAnswered = answers.length >= 2;
 
     return (
       <Screen>
-        <View style={styles.header}>
-          <Text style={styles.eyebrow}>{category?.name}</Text>
-          <Text style={styles.title}>Pregunta</Text>
-          <Text style={styles.subtitle}>
-            Responde mínimo {QUESTIONS_TO_UNLOCK} preguntas para desbloquear la
-            siguiente etapa.
-          </Text>
+        <View style={styles.questionHeader}>
+          <Pressable
+            onPress={() => {
+              setActiveRound(null);
+              setAnswers([]);
+              setAnswer("");
+            }}
+            style={styles.backButton}
+          >
+            <Text style={styles.backButtonText}>←</Text>
+          </Pressable>
+
+          <View style={{ flex: 1 }}>
+            <Text style={styles.questionEyebrow}>{category?.name}</Text>
+            <Text style={styles.questionTitle}>Pregunta privada</Text>
+          </View>
         </View>
 
-        <GlassCard>
-          <View style={styles.form}>
-            <Text style={styles.counter}>
-              Progreso: {answered}/{QUESTIONS_TO_UNLOCK}
+        <View style={styles.progressBox}>
+          <View style={styles.progressTop}>
+            <Text style={styles.progressLabel}>Progreso de etapa</Text>
+            <Text style={styles.progressValue}>
+              {answered}/{QUESTIONS_TO_UNLOCK}
             </Text>
+          </View>
 
-            <Text style={styles.questionText}>{currentQuestion.text}</Text>
-
-            <Input
-              value={answer}
-              onChangeText={setAnswer}
-              placeholder="Escribe tu respuesta..."
-              multiline
-            />
-
-            <Button title="Guardar respuesta" onPress={submitAnswer} />
-
-            <Button
-              title="Volver"
-              variant="secondary"
-              onPress={() => {
-                setCurrentQuestion(null);
-                setSelectedCategory(null);
-                setAnswer("");
-              }}
+          <View style={styles.progressTrack}>
+            <View
+              style={[
+                styles.progressFill,
+                {
+                  width: `${progressPercent}%`
+                }
+              ]}
             />
           </View>
-        </GlassCard>
+        </View>
+
+        <View style={styles.questionCard}>
+          <View style={styles.questionBadge}>
+            <Text style={styles.questionBadgeText}>
+              {bothAnswered ? "RESPUESTAS REVELADAS" : "RESPONDE CON HONESTIDAD"}
+            </Text>
+          </View>
+
+          <Text style={styles.questionText}>{activeRound.question_text}</Text>
+
+          {!hasAnswered && (
+            <>
+              <Input
+                value={answer}
+                onChangeText={setAnswer}
+                placeholder="Escribe tu respuesta..."
+                multiline
+              />
+
+              <Button
+                title={savingAnswer ? "Guardando..." : "Guardar respuesta"}
+                onPress={submitAnswer}
+                disabled={savingAnswer}
+              />
+            </>
+          )}
+
+          {hasAnswered && !bothAnswered && (
+            <View style={styles.waitingBox}>
+              <Text style={styles.waitingTitle}>Respuesta guardada</Text>
+              <Text style={styles.waitingText}>
+                Esperando a que tu pareja responda para revelar ambas respuestas.
+              </Text>
+            </View>
+          )}
+
+          {bothAnswered && (
+            <View style={styles.answersList}>
+              {answers.map((item) => (
+                <View key={item.id} style={styles.answerCard}>
+                  <Text style={styles.answerName}>
+                    {item.participants?.nickname ?? "Pareja"}
+                  </Text>
+                  <Text style={styles.answerText}>{item.answer_text}</Text>
+                </View>
+              ))}
+
+              <Button title="Continuar" onPress={handleContinue} />
+            </View>
+          )}
+        </View>
       </Screen>
     );
   }
 
   return (
     <Screen>
-      <View style={styles.header}>
-        <Text style={styles.eyebrow}>SALA {roomCode}</Text>
-        <Text style={styles.title}>Hola, {nickname}</Text>
-        <Text style={styles.subtitle}>
-          Cada etapa se desbloquea al responder mínimo 5 preguntas por persona.
+      <View style={styles.homeHeader}>
+        <View style={styles.roomPill}>
+          <Text style={styles.roomPillText}>SALA {roomCode}</Text>
+        </View>
+
+        <Text style={styles.homeTitle}>Hola, {nickname}</Text>
+
+        <Text style={styles.homeSubtitle}>
+          Responde 5 preguntas para revelar la siguiente etapa. Las etapas
+          bloqueadas no muestran su nombre.
         </Text>
+
+        <View style={styles.participantsRow}>
+          {participants.map((participant) => (
+            <View key={participant.id} style={styles.participantPill}>
+              <Text style={styles.participantText}>
+                ❤️ {participant.nickname}
+              </Text>
+            </View>
+          ))}
+        </View>
       </View>
 
-      <GlassCard>
-        <View style={styles.inviteBox}>
-          <Text style={styles.inviteTitle}>Link privado</Text>
-
-          <Text numberOfLines={1} style={styles.inviteUrl}>
-            {roomUrl}
-          </Text>
-
-          <Button title="Copiar link" onPress={copyLink} variant="secondary" />
+      <View style={styles.stageSummary}>
+        <View>
+          <Text style={styles.summaryLabel}>Etapa actual</Text>
+          <Text style={styles.summaryValue}>{progress.unlockedIndex + 1}</Text>
         </View>
-      </GlassCard>
+
+        <View style={styles.summaryDivider} />
+
+        <View>
+          <Text style={styles.summaryLabel}>Para desbloquear</Text>
+          <Text style={styles.summaryValue}>{QUESTIONS_TO_UNLOCK}</Text>
+        </View>
+      </View>
 
       <View style={styles.categories}>
         {categories.map((item, index) => {
           const isUnlocked = index <= progress.unlockedIndex;
           const answered = progress.answersByCategory[item.id] ?? 0;
+          const percent = Math.min(answered / QUESTIONS_TO_UNLOCK, 1) * 100;
 
           if (!isUnlocked) {
             return (
-              <View key={item.id} style={styles.lockedCategory}>
-                <Text style={styles.lockedIcon}>🔒</Text>
+              <View key={item.id} style={styles.lockedCard}>
+                <View style={styles.lockedTop}>
+                  <View style={styles.lockedBadge}>
+                    <Text style={styles.lockedBadgeText}>BLOQUEADA</Text>
+                  </View>
 
-                <View style={{ flex: 1 }}>
-                  <Text style={styles.lockedTitle}>Etapa bloqueada</Text>
-                  <Text style={styles.categoryLevel}>
-                    Completa la etapa actual para revelar esta categoría.
-                  </Text>
+                  <View style={styles.lockIconBox}>
+                    <Text style={styles.lockIcon}>🔒</Text>
+                  </View>
                 </View>
+
+                <Text style={styles.lockedTitle}>Etapa oculta</Text>
+
+                <Text style={styles.lockedDescription}>
+                  Completa la etapa actual para revelar esta categoría.
+                </Text>
               </View>
             );
           }
@@ -310,23 +631,54 @@ export default function RoomScreen() {
               key={item.id}
               onPress={() => startCategory(item.id)}
               style={({ pressed }) => [
-                styles.category,
-                pressed && {
-                  transform: [{ scale: 0.98 }],
-                  opacity: 0.85
-                }
+                styles.premiumCard,
+                pressed && styles.cardPressed
               ]}
             >
-              <Text style={styles.categoryIcon}>{item.icon}</Text>
+              <View style={styles.cardGlow} />
 
-              <View style={{ flex: 1 }}>
-                <Text style={styles.categoryName}>{item.name}</Text>
-                <Text style={styles.categoryLevel}>
-                  {answered}/{QUESTIONS_TO_UNLOCK} respuestas
+              <View style={styles.cardTop}>
+                <View style={styles.stageBadge}>
+                  <Text style={styles.stageBadgeText}>ETAPA {index + 1}</Text>
+                </View>
+
+                <View style={styles.counterPill}>
+                  <Text style={styles.counterPillText}>
+                    {answered}/{QUESTIONS_TO_UNLOCK}
+                  </Text>
+                </View>
+              </View>
+
+              <View>
+                <Text style={styles.cardTitle}>{item.name}</Text>
+                <Text style={styles.cardDescription}>
+                  Toca para crear una pregunta compartida.
                 </Text>
               </View>
 
-              <Text style={styles.chevron}>›</Text>
+              <View>
+                <View style={styles.miniProgressTrack}>
+                  <View
+                    style={[
+                      styles.miniProgressFill,
+                      {
+                        width: `${percent}%`
+                      }
+                    ]}
+                  />
+                </View>
+
+                <View style={styles.cardBottom}>
+                  <View style={styles.answerPill}>
+                    <Text style={styles.answerPillText}>Iniciar ronda</Text>
+                    <Text style={styles.answerArrow}>››</Text>
+                  </View>
+
+                  <View style={styles.actionCircle}>
+                    <Text style={styles.actionIcon}>↗</Text>
+                  </View>
+                </View>
+              </View>
             </Pressable>
           );
         })}
@@ -336,112 +688,433 @@ export default function RoomScreen() {
 }
 
 const styles = StyleSheet.create({
-  header: {
-    marginBottom: 24
+  heroHeader: { marginBottom: 28 },
+  appPill: {
+    alignSelf: "flex-start",
+    paddingHorizontal: 14,
+    height: 32,
+    borderRadius: 999,
+    backgroundColor: "rgba(255,45,85,0.16)",
+    borderWidth: 1,
+    borderColor: "rgba(255,45,85,0.28)",
+    justifyContent: "center",
+    marginBottom: 18
   },
-  eyebrow: {
+  appPillText: {
     color: colors.primary,
-    fontSize: 12,
+    fontSize: 11,
     fontWeight: "900",
-    letterSpacing: 1.7,
-    marginBottom: 12
+    letterSpacing: 1.4
   },
-  title: {
+  heroTitle: {
     color: colors.text,
-    fontSize: 40,
-    lineHeight: 44,
+    fontSize: 46,
+    lineHeight: 48,
     fontWeight: "900",
-    letterSpacing: -1.4,
-    marginBottom: 12
+    letterSpacing: -2
   },
-  subtitle: {
+  heroSubtitle: {
     color: colors.textSecondary,
     fontSize: 16,
-    lineHeight: 23
+    lineHeight: 24,
+    marginTop: 14
   },
-  form: {
-    gap: 16
-  },
+  form: { gap: 16 },
   label: {
     color: colors.text,
     fontSize: 15,
-    fontWeight: "700"
-  },
-  inviteBox: {
-    gap: 12
-  },
-  inviteTitle: {
-    color: colors.text,
-    fontSize: 16,
     fontWeight: "800"
   },
-  inviteUrl: {
-    color: colors.textMuted,
-    fontSize: 13
-  },
-  categories: {
-    gap: 14,
-    marginTop: 20
-  },
-  category: {
-    minHeight: 86,
-    borderRadius: 26,
-    paddingHorizontal: 18,
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 14,
-    backgroundColor: "rgba(255,255,255,0.08)",
-    borderWidth: 1,
-    borderColor: colors.border
-  },
-  lockedCategory: {
-    minHeight: 86,
-    borderRadius: 26,
-    paddingHorizontal: 18,
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 14,
-    backgroundColor: "rgba(255,255,255,0.035)",
-    borderWidth: 1,
-    borderColor: "rgba(255,255,255,0.06)",
-    opacity: 0.7
-  },
-  categoryIcon: {
-    fontSize: 32
-  },
-  lockedIcon: {
-    fontSize: 28,
-    opacity: 0.7
-  },
-  categoryName: {
-    color: colors.text,
-    fontSize: 18,
-    fontWeight: "800"
-  },
-  lockedTitle: {
-    color: colors.textSecondary,
-    fontSize: 17,
-    fontWeight: "800"
-  },
-  categoryLevel: {
+  safeNote: {
     color: colors.textMuted,
     fontSize: 13,
-    marginTop: 4
+    lineHeight: 18,
+    textAlign: "center"
   },
-  chevron: {
+  homeHeader: { marginBottom: 20 },
+  roomPill: {
+    alignSelf: "flex-start",
+    paddingHorizontal: 14,
+    height: 32,
+    borderRadius: 999,
+    backgroundColor: "rgba(255,255,255,0.08)",
+    borderWidth: 1,
+    borderColor: "rgba(255,255,255,0.12)",
+    justifyContent: "center",
+    marginBottom: 16
+  },
+  roomPillText: {
+    color: colors.textSecondary,
+    fontSize: 11,
+    fontWeight: "900",
+    letterSpacing: 1.5
+  },
+  homeTitle: {
+    color: colors.text,
+    fontSize: 42,
+    lineHeight: 44,
+    fontWeight: "900",
+    letterSpacing: -1.7
+  },
+  homeSubtitle: {
+    color: colors.textSecondary,
+    fontSize: 15.5,
+    lineHeight: 23,
+    marginTop: 12
+  },
+  participantsRow: {
+    marginTop: 18,
+    flexDirection: "row",
+    gap: 8,
+    flexWrap: "wrap"
+  },
+  participantPill: {
+    backgroundColor: "rgba(255,255,255,0.08)",
+    paddingHorizontal: 14,
+    paddingVertical: 8,
+    borderRadius: 999,
+    borderWidth: 1,
+    borderColor: "rgba(255,255,255,0.1)"
+  },
+  participantText: {
+    color: colors.text,
+    fontWeight: "800",
+    fontSize: 13
+  },
+  stageSummary: {
+    height: 88,
+    borderRadius: 28,
+    paddingHorizontal: 22,
+    marginBottom: 24,
+    backgroundColor: "rgba(255,255,255,0.07)",
+    borderWidth: 1,
+    borderColor: "rgba(255,255,255,0.1)",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between"
+  },
+  summaryLabel: {
     color: colors.textMuted,
-    fontSize: 34,
-    fontWeight: "300"
+    fontSize: 12,
+    fontWeight: "800",
+    marginBottom: 6
+  },
+  summaryValue: {
+    color: colors.text,
+    fontSize: 28,
+    fontWeight: "900"
+  },
+  summaryDivider: {
+    width: 1,
+    height: 42,
+    backgroundColor: "rgba(255,255,255,0.12)"
+  },
+  categories: { gap: 22 },
+  premiumCard: {
+    minHeight: 248,
+    borderRadius: 36,
+    padding: 22,
+    backgroundColor: "#0A66F5",
+    overflow: "hidden",
+    justifyContent: "space-between",
+    shadowColor: "#0A66F5",
+    shadowOffset: { width: 0, height: 18 },
+    shadowOpacity: 0.36,
+    shadowRadius: 30
+  },
+  cardPressed: {
+    transform: [{ scale: 0.985 }],
+    opacity: 0.92
+  },
+  cardGlow: {
+    position: "absolute",
+    right: -60,
+    top: -90,
+    width: 210,
+    height: 210,
+    borderRadius: 210,
+    backgroundColor: "rgba(255,255,255,0.2)"
+  },
+  cardTop: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center"
+  },
+  stageBadge: {
+    paddingHorizontal: 13,
+    height: 30,
+    borderRadius: 999,
+    backgroundColor: "rgba(255,255,255,0.94)",
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  stageBadgeText: {
+    color: "#FF2D55",
+    fontSize: 11,
+    fontWeight: "900",
+    letterSpacing: 0.8
+  },
+  counterPill: {
+    height: 38,
+    paddingHorizontal: 15,
+    borderRadius: 999,
+    backgroundColor: "rgba(255,255,255,0.24)",
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  counterPillText: {
+    color: "#FFFFFF",
+    fontSize: 14,
+    fontWeight: "900"
+  },
+  cardTitle: {
+    color: "#FFFFFF",
+    fontSize: 31,
+    lineHeight: 35,
+    fontWeight: "900",
+    letterSpacing: -1.1,
+    maxWidth: 310
+  },
+  cardDescription: {
+    color: "rgba(255,255,255,0.78)",
+    fontSize: 14,
+    lineHeight: 20,
+    marginTop: 8
+  },
+  miniProgressTrack: {
+    height: 8,
+    borderRadius: 999,
+    backgroundColor: "rgba(255,255,255,0.2)",
+    overflow: "hidden",
+    marginBottom: 14
+  },
+  miniProgressFill: {
+    height: "100%",
+    borderRadius: 999,
+    backgroundColor: "#FFFFFF"
+  },
+  cardBottom: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 12
+  },
+  answerPill: {
+    flex: 1,
+    height: 52,
+    borderRadius: 999,
+    backgroundColor: "rgba(255,255,255,0.22)",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 10
+  },
+  answerPillText: {
+    color: "#FFFFFF",
+    fontSize: 14,
+    fontWeight: "900"
+  },
+  answerArrow: {
+    color: "#FFFFFF",
+    fontSize: 19,
+    fontWeight: "900"
+  },
+  actionCircle: {
+    width: 56,
+    height: 56,
+    borderRadius: 999,
+    backgroundColor: "#FFFFFF",
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  actionIcon: {
+    color: "#0A66F5",
+    fontSize: 24,
+    fontWeight: "900"
+  },
+  lockedCard: {
+    minHeight: 210,
+    borderRadius: 36,
+    padding: 22,
+    backgroundColor: "rgba(255,255,255,0.055)",
+    borderWidth: 1,
+    borderColor: "rgba(255,255,255,0.08)",
+    justifyContent: "space-between",
+    opacity: 0.82
+  },
+  lockedTop: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center"
+  },
+  lockedBadge: {
+    paddingHorizontal: 13,
+    height: 30,
+    borderRadius: 999,
+    backgroundColor: "rgba(255,255,255,0.09)",
+    justifyContent: "center"
+  },
+  lockedBadgeText: {
+    color: colors.textSecondary,
+    fontSize: 11,
+    fontWeight: "900",
+    letterSpacing: 1
+  },
+  lockIconBox: {
+    width: 42,
+    height: 42,
+    borderRadius: 999,
+    backgroundColor: "rgba(255,255,255,0.08)",
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  lockIcon: { fontSize: 18 },
+  lockedTitle: {
+    color: colors.textSecondary,
+    fontSize: 32,
+    lineHeight: 35,
+    fontWeight: "900",
+    letterSpacing: -1.2
+  },
+  lockedDescription: {
+    color: colors.textMuted,
+    fontSize: 14,
+    lineHeight: 20
+  },
+  questionHeader: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 14,
+    marginBottom: 22
+  },
+  backButton: {
+    width: 46,
+    height: 46,
+    borderRadius: 999,
+    backgroundColor: "rgba(255,255,255,0.09)",
+    borderWidth: 1,
+    borderColor: "rgba(255,255,255,0.1)",
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  backButtonText: {
+    color: colors.text,
+    fontSize: 22,
+    fontWeight: "900"
+  },
+  questionEyebrow: {
+    color: colors.primary,
+    fontSize: 11,
+    fontWeight: "900",
+    letterSpacing: 1,
+    marginBottom: 4
+  },
+  questionTitle: {
+    color: colors.text,
+    fontSize: 28,
+    fontWeight: "900",
+    letterSpacing: -1
+  },
+  progressBox: {
+    borderRadius: 24,
+    padding: 16,
+    backgroundColor: "rgba(255,255,255,0.07)",
+    borderWidth: 1,
+    borderColor: "rgba(255,255,255,0.1)",
+    marginBottom: 18
+  },
+  progressTop: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginBottom: 10
+  },
+  progressLabel: {
+    color: colors.textMuted,
+    fontSize: 13,
+    fontWeight: "800"
+  },
+  progressValue: {
+    color: colors.text,
+    fontSize: 13,
+    fontWeight: "900"
+  },
+  progressTrack: {
+    height: 8,
+    borderRadius: 999,
+    backgroundColor: "rgba(255,255,255,0.12)",
+    overflow: "hidden"
+  },
+  progressFill: {
+    height: "100%",
+    borderRadius: 999,
+    backgroundColor: colors.primary
+  },
+  questionCard: {
+    borderRadius: 34,
+    padding: 22,
+    backgroundColor: "rgba(255,255,255,0.08)",
+    borderWidth: 1,
+    borderColor: "rgba(255,255,255,0.12)",
+    gap: 18
+  },
+  questionBadge: {
+    alignSelf: "flex-start",
+    height: 30,
+    paddingHorizontal: 12,
+    borderRadius: 999,
+    backgroundColor: "rgba(255,45,85,0.16)",
+    justifyContent: "center"
+  },
+  questionBadgeText: {
+    color: colors.primary,
+    fontSize: 11,
+    fontWeight: "900",
+    letterSpacing: 0.9
   },
   questionText: {
     color: colors.text,
     fontSize: 25,
     lineHeight: 34,
-    fontWeight: "800"
+    fontWeight: "900",
+    letterSpacing: -0.6
   },
-  counter: {
-    color: colors.primary,
+  waitingBox: {
+    borderRadius: 24,
+    padding: 18,
+    backgroundColor: "rgba(255,255,255,0.06)",
+    borderWidth: 1,
+    borderColor: "rgba(255,255,255,0.1)",
+    gap: 6
+  },
+  waitingTitle: {
+    color: colors.text,
+    fontSize: 18,
+    fontWeight: "900"
+  },
+  waitingText: {
+    color: colors.textSecondary,
     fontSize: 14,
-    fontWeight: "800"
+    lineHeight: 20
+  },
+  answersList: {
+    gap: 14
+  },
+  answerCard: {
+    borderRadius: 24,
+    padding: 18,
+    backgroundColor: "rgba(255,255,255,0.07)",
+    borderWidth: 1,
+    borderColor: "rgba(255,255,255,0.1)",
+    gap: 8
+  },
+  answerName: {
+    color: colors.primary,
+    fontSize: 13,
+    fontWeight: "900"
+  },
+  answerText: {
+    color: colors.text,
+    fontSize: 17,
+    lineHeight: 24,
+    fontWeight: "700"
   }
 });
