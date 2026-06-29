@@ -1,0 +1,4439 @@
+[
+  {
+    "id": "coqueteo_001",
+    "category": "coqueteo",
+    "level": 1,
+    "text": "⁠ ⁠¿Qué es lo que más te enciende cuando estamos juntos?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "coqueteo_002",
+    "category": "coqueteo",
+    "level": 1,
+    "text": "⁠ ⁠Si pudieras pedirme que haga algo solo para ti esta noche, ¿qué sería?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "coqueteo_003",
+    "category": "coqueteo",
+    "level": 1,
+    "text": "⁠ ⁠¿Hay alguna parte de tu cuerpo que te gustaría que explorara más?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "juegos_roles_001",
+    "category": "juegos_roles",
+    "level": 4,
+    "text": "⁠ ⁠¿Qué tipo de caricias o besos te hacen perder el control?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "coqueteo_004",
+    "category": "coqueteo",
+    "level": 1,
+    "text": "⁠ ⁠¿Te gusta más cuando todo va lento y suave o cuando hay un poco más de intensidad?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "sensualidad_001",
+    "category": "sensualidad",
+    "level": 3,
+    "text": "⁠ ⁠¿Qué opinas de probar algo nuevo, como un masaje con aceites o algo más atrevido?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "coqueteo_005",
+    "category": "coqueteo",
+    "level": 1,
+    "text": "⁠ ⁠¿Hay algún lugar fuera de la cama donde te gustaría que estuviéramos juntos?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "coqueteo_006",
+    "category": "coqueteo",
+    "level": 1,
+    "text": "⁠ ⁠¿Qué te parece más sexy: la ropa ajustada, la lencería o algo más inesperado?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_001",
+    "category": "fantasias",
+    "level": 5,
+    "text": "⁠ ⁠Si pudieras imaginar una noche perfecta sin límites, ¿cómo sería?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_002",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Alguna vez has soñado con algo picante que no me hayas contado?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_003",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Qué escena de una película o libro te ha puesto a pensar en algo que quisieras probar?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_004",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠Si tuvieras una varita mágica para hacer realidad una fantasía, ¿qué elegirías?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "juegos_roles_002",
+    "category": "juegos_roles",
+    "level": 4,
+    "text": "⁠ ⁠¿Te gusta la idea de jugar con roles o imaginar que somos otras personas por una noche?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_005",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Qué tan emocionante te parecería incluir algo como vendas o plumas en nuestro juego?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "sexo_publico_001",
+    "category": "sexo_publico",
+    "level": 4,
+    "text": "⁠ ⁠¿Hay algún lugar público donde te daría curiosidad estar conmigo, aunque sea en secreto?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_006",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Alguna vez has sentido curiosidad por cómo sería estar con alguien más en la habitación, solo como idea?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_001",
+    "category": "bisexualidad",
+    "level": 3,
+    "text": "⁠ ⁠Si una amiga tuya te contara que tuvo una experiencia con otra chica, ¿qué le dirías? ¿Te ha pasado por la mente algo así?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_007",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Qué opinas de esas parejas que invitan a alguien más a su intimidad? ¿Te parece loco o interesante?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_008",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Has tenido alguna experiencia que te sorprendiera lo mucho que te gustó?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_009",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠Si pudieras elegir a alguien para un momento atrevido con nosotros, ¿quién te vendría a la mente?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_010",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Te gusta más la idea de mirar o ser mirada en un momento íntimo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_011",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Qué tan abierta estarías a probar algo que nunca hemos hecho, como un juego a tres bandas?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_012",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠Si estuviéramos en una isla desierta, ¿qué harías conmigo para pasar el tiempo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_013",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Qué te gustaría que te susurrara al oído en un momento caliente?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_014",
+    "category": "fantasias",
+    "level": 5,
+    "text": "⁠ ⁠Si tuvieras que describir tu fantasía más salvaje con una sola palabra, ¿cuál sería?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_015",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Qué tan lejos te gustaría que llegáramos si nadie nos juzgara?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_016",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Hay algo que te dé un poco de nervios, pero que al mismo tiempo te intrigue probar?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "sensualidad_002",
+    "category": "sensualidad",
+    "level": 2,
+    "text": "⁠ ⁠¿Qué sonido o palabra te pone la piel de gallina cuando lo escuchas en un momento íntimo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "sensualidad_003",
+    "category": "sensualidad",
+    "level": 2,
+    "text": "⁠ ⁠¿Prefieres que te sorprenda con algo inesperado o que todo sea planeado y tranquilo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "sensualidad_004",
+    "category": "sensualidad",
+    "level": 3,
+    "text": "⁠ ⁠¿Qué textura te excita más: algo suave como seda, o algo más firme y atrevido?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "sensualidad_005",
+    "category": "sensualidad",
+    "level": 2,
+    "text": "⁠ ⁠¿Hay algún aroma que te despierte los sentidos y te haga pensar en mí?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "sensualidad_006",
+    "category": "sensualidad",
+    "level": 2,
+    "text": "⁠ ⁠¿Qué parte de mi cuerpo te gusta más y cómo te gustaría que la usara contigo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "sensualidad_007",
+    "category": "sensualidad",
+    "level": 2,
+    "text": "⁠ ⁠¿Te gusta más el calor o el frío cuando se trata de jugar en la cama?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "sensualidad_008",
+    "category": "sensualidad",
+    "level": 2,
+    "text": "⁠ ⁠¿Qué tan importante es para ti el juego previo antes de llegar al clímax?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trans_001",
+    "category": "trans",
+    "level": 6,
+    "text": "⁠ ⁠Si pudieras teletransportarnos a cualquier lugar para una noche salvaje, ¿a dónde iríamos?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "juegos_roles_003",
+    "category": "juegos_roles",
+    "level": 4,
+    "text": "⁠ ⁠¿Qué te parecería fingir que nos acabamos de conocer y seducirnos como desconocidos?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_017",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Alguna vez has imaginado que alguien nos observa mientras estamos juntos?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "juegos_roles_004",
+    "category": "juegos_roles",
+    "level": 4,
+    "text": "⁠ ⁠Si tuvieras que elegir un disfraz para mí que te vuelva loco/a, ¿cuál sería?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_018",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Qué tan emocionante te parecería probar algo en un coche o en un lugar prohibido?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "sexo_publico_002",
+    "category": "sexo_publico",
+    "level": 4,
+    "text": "⁠ ⁠¿Te gusta la idea de grabar un momento nuestro, aunque sea solo para nosotros?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_019",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠Si pudieras escribir el guion de una noche perfecta, ¿qué pasaría paso a paso?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_020",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Alguna vez has tenido un sueño subido de tono que te dejó pensando todo el día?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_021",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Qué opinas de las personas que experimentan con más de una pareja a la vez?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_002",
+    "category": "bisexualidad",
+    "level": 3,
+    "text": "⁠ ⁠Si una amiga te confesara que besó a otra chica, ¿te daría curiosidad saber cómo fue?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_022",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Has tenido un momento en el que sentiste que querías romper todas las reglas?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_023",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Qué es lo más atrevido que has hecho o que te gustaría intentar algún día?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_024",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Te ha pasado que alguien te atraiga tanto que imagines algo más allá de lo usual?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_025",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Qué tan abierta estarías a que alguien más se una a nuestra diversión, aunque sea solo en la imaginación?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_026",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Qué te gustaría que te hiciera ahora mismo si no hubiera límites?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_027",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠Si te diera un pase libre para pedirme cualquier cosa esta noche, ¿qué elegirías?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_028",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Qué tan rápido se te acelera el corazón si te digo que quiero probar algo nuevo contigo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "juegos_roles_005",
+    "category": "juegos_roles",
+    "level": 4,
+    "text": "⁠ ⁠¿Te gusta más dominar o dejar que yo tome el control por completo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_029",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Qué palabra o frase te gustaría que usara para hacerte enloquecer?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_030",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠Si te tocara con los ojos vendados, ¿dónde querrías que empezara?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fetiches_001",
+    "category": "fetiches",
+    "level": 6,
+    "text": "⁠ ⁠¿Qué opinas de incluir juguetes o algo diferente en nuestros momentos juntos?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "sensualidad_009",
+    "category": "sensualidad",
+    "level": 2,
+    "text": "⁠ ⁠¿Te atrae la idea de un masaje que termine en algo más inesperado?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_001",
+    "category": "trios",
+    "level": 4,
+    "text": "⁠ ⁠Si pudieras elegir a una celebridad para un trío hipotético, ¿quién sería y por qué?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_031",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Qué tan tentador te parecería probar algo en un lugar donde podrían descubrirnos?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_032",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Hay alguna fantasía que te dé vergüenza admitir, pero que te intrigue demasiado?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_033",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Qué te parecería si te propongo un juego donde los dos inventemos algo prohibido?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_003",
+    "category": "bisexualidad",
+    "level": 3,
+    "text": "⁠ ⁠¿Alguna vez has sentido curiosidad por cómo sería besar a otra chica, aunque sea solo por imaginarlo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_004",
+    "category": "bisexualidad",
+    "level": 4,
+    "text": "⁠ ⁠Si vieras a dos mujeres juntas en una película, ¿te daría intriga saber cómo se siente?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_005",
+    "category": "bisexualidad",
+    "level": 4,
+    "text": "⁠ ⁠¿Qué piensas de esas amigas que dicen que han probado algo con otra mujer por diversión?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_006",
+    "category": "bisexualidad",
+    "level": 4,
+    "text": "⁠ ⁠Si tuvieras una noche para experimentar lo que quisieras sin que nadie lo supiera, ¿te cruzarías con la idea de estar con una chica?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_007",
+    "category": "bisexualidad",
+    "level": 4,
+    "text": "⁠ ⁠¿Hay algo en la suavidad o la energía de una mujer que te llame la atención en un sentido más íntimo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_002",
+    "category": "trios",
+    "level": 4,
+    "text": "⁠ ⁠¿Qué opinas de esas parejas que invitan a un hombre más a su habitación? ¿Te parece raro o interesante?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_003",
+    "category": "trios",
+    "level": 4,
+    "text": "⁠ ⁠Si imagináramos a alguien más con nosotros, ¿te gustaría que fuera alguien que te mime junto conmigo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_004",
+    "category": "trios",
+    "level": 4,
+    "text": "⁠ ⁠¿Te ha pasado por la mente cómo sería tener dos personas enfocadas en hacerte sentir increíble?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_005",
+    "category": "trios",
+    "level": 4,
+    "text": "⁠ ⁠Si tuvieras que fantasear con un trío, ¿te inclinarías por más atención para ti o por compartir el momento?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_006",
+    "category": "trios",
+    "level": 4,
+    "text": "⁠ ⁠¿Qué tan emocionante te parecería que dos hombres te desearan al mismo tiempo en un juego privado?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_007",
+    "category": "trios",
+    "level": 4,
+    "text": "⁠ ⁠¿Alguna vez has pensado en cómo sería compartir un momento conmigo y otra mujer que te intrigue?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_008",
+    "category": "trios",
+    "level": 4,
+    "text": "⁠ ⁠Si una chica se uniera a nosotros por una noche, ¿qué te gustaría que pasara entre ustedes dos?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_009",
+    "category": "trios",
+    "level": 4,
+    "text": "⁠ ⁠¿Qué opinas de esas historias donde dos mujeres y un hombre se divierten juntos? ¿Te da curiosidad?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_010",
+    "category": "trios",
+    "level": 4,
+    "text": "⁠ ⁠Si pudieras elegir a una mujer para un momento especial con nosotros, ¿qué tipo de persona te imaginarías?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_011",
+    "category": "trios",
+    "level": 4,
+    "text": "⁠ ⁠¿Te atraería la idea de ver cómo interactúo con otra chica mientras tú estás en el juego?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "orgias_001",
+    "category": "orgias",
+    "level": 7,
+    "text": "⁠ ⁠¿Qué tan loco te parecería imaginar una noche donde más personas se unan a nuestra diversión?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "orgias_002",
+    "category": "orgias",
+    "level": 7,
+    "text": "⁠ ⁠Si estuviéramos en una fiesta privada y las cosas se pusieran atrevidas con otros, ¿te dejarías llevar?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "orgias_003",
+    "category": "orgias",
+    "level": 7,
+    "text": "⁠ ⁠¿Has pensado alguna vez en cómo sería un encuentro con más de tres personas, solo como fantasía?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "orgias_004",
+    "category": "orgias",
+    "level": 7,
+    "text": "⁠ ⁠Si tuvieras la oportunidad de probar algo con un grupo pequeño, ¿qué te gustaría que pasara?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "orgias_005",
+    "category": "orgias",
+    "level": 7,
+    "text": "⁠ ⁠¿Qué opinas de esas parejas que dicen que un cuarteto les dio un giro emocionante a su vida íntima?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_034",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Qué tan abierta estarías a imaginar algo con más personas, aunqueರ",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "orgias_006",
+    "category": "orgias",
+    "level": 3,
+    "text": "⁠ ⁠Si pudieras crear una noche perfecta con varias personas, ¿cómo sería el ambiente?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_035",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Te gusta más la idea de explorar con hombres, mujeres o una mezcla de ambos?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_036",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Qué tan intrigante te parece la idea de compartir un momento íntimo con más de una persona?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "orgias_007",
+    "category": "orgias",
+    "level": 3,
+    "text": "⁠ ⁠Si nadie juzgara, ¿qué tipo de experiencia grupal te daría curiosidad probar?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_008",
+    "category": "bisexualidad",
+    "level": 3,
+    "text": "⁠ ⁠¿Alguna vez has sentido curiosidad por cómo sería besar a otra chica, aunque sea solo por imaginarlo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_009",
+    "category": "bisexualidad",
+    "level": 4,
+    "text": "⁠ ⁠Si vieras a dos mujeres juntas en una película, ¿te daría intriga saber cómo se siente?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_010",
+    "category": "bisexualidad",
+    "level": 4,
+    "text": "⁠ ⁠¿Qué piensas de esas amigas que dicen que han probado algo con otra mujer por diversión?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_011",
+    "category": "bisexualidad",
+    "level": 4,
+    "text": "⁠ ⁠Si tuvieras una noche para experimentar lo que quisieras sin que nadie lo supiera, ¿te cruzarías con la idea de estar con una chica?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_012",
+    "category": "bisexualidad",
+    "level": 4,
+    "text": "⁠ ⁠¿Hay algo en la suavidad o la energía de una mujer que te llame la atención en un sentido más íntimo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_012",
+    "category": "trios",
+    "level": 4,
+    "text": "⁠ ⁠¿Qué opinas de esas parejas que invitan a un hombre más a su habitación? ¿Te parece raro o interesante?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_013",
+    "category": "trios",
+    "level": 4,
+    "text": "⁠ ⁠Si imagináramos a alguien más con nosotros, ¿te gustaría que fuera alguien que te mime junto conmigo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_014",
+    "category": "trios",
+    "level": 4,
+    "text": "⁠ ⁠¿Te ha pasado por la mente cómo sería tener dos personas enfocadas en hacerte sentir increíble?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_015",
+    "category": "trios",
+    "level": 4,
+    "text": "⁠ ⁠Si tuvieras que fantasear con un trío, ¿te inclinarías por más atención para ti o por compartir el momento?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_016",
+    "category": "trios",
+    "level": 4,
+    "text": "⁠ ⁠¿Qué tan emocionante te parecería que dos hombres te desearan al mismo tiempo en un juego privado?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_017",
+    "category": "trios",
+    "level": 4,
+    "text": "⁠ ⁠¿Alguna vez has pensado en cómo sería compartir un momento conmigo y otra mujer que te intrigue?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_018",
+    "category": "trios",
+    "level": 4,
+    "text": "⁠ ⁠Si una chica se uniera a nosotros por una noche, ¿qué te gustaría que pasara entre ustedes dos?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_019",
+    "category": "trios",
+    "level": 4,
+    "text": "⁠ ⁠¿Qué opinas de esas historias donde dos mujeres y un hombre se divierten juntos? ¿Te da curiosidad?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_020",
+    "category": "trios",
+    "level": 4,
+    "text": "⁠ ⁠Si pudieras elegir a una mujer para un momento especial con nosotros, ¿qué tipo de persona te imaginarías?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_021",
+    "category": "trios",
+    "level": 4,
+    "text": "⁠ ⁠¿Te atraería la idea de ver cómo interactúo con otra chica mientras tú estás en el juego?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "orgias_008",
+    "category": "orgias",
+    "level": 7,
+    "text": "⁠ ⁠¿Qué tan loco te parecería imaginar una noche donde más personas se unan a nuestra diversión?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "orgias_009",
+    "category": "orgias",
+    "level": 7,
+    "text": "⁠ ⁠Si estuviéramos en una fiesta privada y las cosas se pusieran atrevidas con otros, ¿te dejarías llevar?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "orgias_010",
+    "category": "orgias",
+    "level": 7,
+    "text": "⁠ ⁠¿Has pensado alguna vez en cómo sería un encuentro con más de tres personas, solo como fantasía?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "orgias_011",
+    "category": "orgias",
+    "level": 7,
+    "text": "⁠ ⁠Si tuvieras la oportunidad de probar algo con un grupo pequeño, ¿qué te gustaría que pasara?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "orgias_012",
+    "category": "orgias",
+    "level": 7,
+    "text": "⁠ ⁠¿Qué opinas de esas parejas que dicen que un cuarteto les dio un giro emocionante a su vida íntima?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_037",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Qué tan abierta estarías a imaginar algo con más personas, aunqueರ",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "orgias_013",
+    "category": "orgias",
+    "level": 3,
+    "text": "⁠ ⁠Si pudieras crear una noche perfecta con varias personas, ¿cómo sería el ambiente?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_038",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Te gusta más la idea de explorar con hombres, mujeres o una mezcla de ambos?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_039",
+    "category": "fantasias",
+    "level": 3,
+    "text": "⁠ ⁠¿Qué tan intrigante te parece la idea de compartir un momento íntimo con más de una persona?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "orgias_014",
+    "category": "orgias",
+    "level": 3,
+    "text": "⁠ ⁠Si nadie juzgara, ¿qué tipo de experiencia grupal te daría curiosidad probar?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "dominacion_001",
+    "category": "dominacion",
+    "level": 5,
+    "text": "¿Me atarías y me follarías hasta hacerme suplicar que pares, o prefieres que te lo haga yo a ti?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_040",
+    "category": "fantasias",
+    "level": 5,
+    "text": "¿Me pondrías a cuatro patas y me darías duro mientras me dices guarradas al oído?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_041",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Qué tan cachonda te pondría lamerme entero y luego sentarte en mi cara hasta correrte?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_042",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Me chuparías hasta dejarme seco mientras me miras con cara de viciosa?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "sexo_publico_003",
+    "category": "sexo_publico",
+    "level": 4,
+    "text": "¿Te imaginas metiéndome mano en un sitio público y luego follando como animales donde nos pillen?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fetiches_002",
+    "category": "fetiches",
+    "level": 6,
+    "text": "¿Me harías gritar tu nombre mientras me follas con un juguete o con lo que tengas a mano?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_043",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Qué harías conmigo si tuvieras una hora para dejarme temblando y empapado?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_044",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Me desnudarías despacio para luego comerme vivo o irías directo a metérmela sin avisar?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fetiches_003",
+    "category": "fetiches",
+    "level": 6,
+    "text": "¿Te molaría darme por el culo mientras me pajeas hasta que no pueda más?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_045",
+    "category": "fantasias",
+    "level": 5,
+    "text": "¿Qué tan guarra te pondrías conmigo si te dejo hacer lo que quieras sin límites?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "juegos_roles_006",
+    "category": "juegos_roles",
+    "level": 4,
+    "text": "¿Te pondría cachonda follarme como si no me conocieras, arrancándome la ropa sin decir nada?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "juegos_roles_007",
+    "category": "juegos_roles",
+    "level": 4,
+    "text": "¿Me tratarías como un desconocido y me la chuparías en un callejón oscuro sin preguntar?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "dominacion_002",
+    "category": "dominacion",
+    "level": 5,
+    "text": "¿Me atarías a la cama y me montarías hasta que te corras, o prefieres que te domine yo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "dominacion_003",
+    "category": "dominacion",
+    "level": 5,
+    "text": "¿Te molaría darme órdenes guarras mientras te follo como tu esclavo personal?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_022",
+    "category": "trios",
+    "level": 4,
+    "text": "¿Me follarías mientras otra tía me come la polla, o prefieres que te demos entre dos?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_023",
+    "category": "trios",
+    "level": 4,
+    "text": "¿Qué harías si te pillara con un tío y te dijera \"fóllame con él ahora mismo\"?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "sexo_publico_004",
+    "category": "sexo_publico",
+    "level": 4,
+    "text": "¿Me la meterías en un cine mientras todos miran, o me harías correrme en un parque?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "sexo_publico_005",
+    "category": "sexo_publico",
+    "level": 4,
+    "text": "¿Te pondría cachonda follarme en un baño público hasta que nos escuchen gemir?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_046",
+    "category": "fantasias",
+    "level": 4,
+    "text": "¿Me cabalgarías como loca mientras alguien nos graba o nos mira desde la ventana?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_047",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Qué tan guarra te pondrías conmigo si supieras que hay ojos puestos en cómo me follas?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_013",
+    "category": "bisexualidad",
+    "level": 4,
+    "text": "¿Me harías mirar mientras te comes a una tía y luego me follas con ella encima?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_014",
+    "category": "bisexualidad",
+    "level": 4,
+    "text": "¿Te imaginas lamiendo a una chica mientras yo te doy por detrás hasta reventar?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "juegos_roles_008",
+    "category": "juegos_roles",
+    "level": 4,
+    "text": "¿Me follarías vestida de enfermera cachonda o prefieres que te dé como policía rudo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "juegos_roles_009",
+    "category": "juegos_roles",
+    "level": 4,
+    "text": "¿Qué harías conmigo si fingimos que soy tu jefe y te pillo en la oficina?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_048",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Me follarías imaginando que soy [inserte famoso] y me dirías guarradas de él?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_049",
+    "category": "fantasias",
+    "level": 5,
+    "text": "¿Qué tan duro me darías si te digo que finjas que soy tu crush famoso?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "sexo_publico_006",
+    "category": "sexo_publico",
+    "level": 4,
+    "text": "¿Me desnudarías en un balcón y me la chuparías para que todos vean lo guarra que eres?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "sexo_publico_007",
+    "category": "sexo_publico",
+    "level": 4,
+    "text": "¿Te molaría follarme en la playa mientras la gente pasa y se queda mirando?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_050",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Me agarrarías del pelo y me follarías contra la pared hasta dejarme sin aliento?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_051",
+    "category": "fantasias",
+    "level": 5,
+    "text": "¿Qué tan bestia te pondrías conmigo si te pido que me des duro sin parar?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "dominacion_004",
+    "category": "dominacion",
+    "level": 6,
+    "text": "¿Me harías correrme en tu cara mientras me dices lo mucho que te gusta mi leche?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "dominacion_005",
+    "category": "dominacion",
+    "level": 5,
+    "text": "¿Te imaginas escupiéndome en la boca y luego follando hasta que gritemos?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "dominacion_006",
+    "category": "dominacion",
+    "level": 5,
+    "text": "¿Qué harías conmigo si te digo que quiero que me uses como tu juguete sucio?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "dominacion_007",
+    "category": "dominacion",
+    "level": 5,
+    "text": "¿Me meterías los dedos por todos lados mientras me la chupas hasta sacarme todo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "dominacion_008",
+    "category": "dominacion",
+    "level": 5,
+    "text": "¿Te pondría a mil follarme tan fuerte que dejemos la cama rota y el suelo empapado?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_052",
+    "category": "fantasias",
+    "level": 6,
+    "text": "¿Me abrirías de piernas y me la meterías hasta el fondo sin avisar, o prefieres que te lo haga yo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fetiches_004",
+    "category": "fetiches",
+    "level": 6,
+    "text": "¿Te pondrías tan cerda conmigo que me harías lamerte el culo mientras te tocas?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_053",
+    "category": "fantasias",
+    "level": 6,
+    "text": "¿Me follarías la boca hasta dejarme babeando y pidiendo más?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_054",
+    "category": "fantasias",
+    "level": 6,
+    "text": "¿Qué harías si te digo que me des duro contra la mesa hasta que no pueda ni sentarme?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_055",
+    "category": "fantasias",
+    "level": 6,
+    "text": "¿Me pondrías mirando pa’ Cuenca y me darías por detrás mientras me azotas como loca?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_056",
+    "category": "fantasias",
+    "level": 6,
+    "text": "¿Te imaginas restregándome tus tetas en la cara y luego folándome hasta que explote?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_057",
+    "category": "fantasias",
+    "level": 7,
+    "text": "¿Me harías tragármelo todo mientras me miras con cara de zorra disfrutándolo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "dominacion_009",
+    "category": "dominacion",
+    "level": 6,
+    "text": "¿Qué tan guarra te pondrías si te dejo follarme con los ojos vendados y atado?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_058",
+    "category": "fantasias",
+    "level": 6,
+    "text": "¿Me meterías la lengua por todos lados antes de montarme como una bestia?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_059",
+    "category": "fantasias",
+    "level": 6,
+    "text": "¿Me harías suplicar que me corra mientras me aprietas y me follas sin parar?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "juegos_roles_010",
+    "category": "juegos_roles",
+    "level": 4,
+    "text": "¿Me follarías como si fuera un tío que acabas de pillar en un bar y te lo quieres comer vivo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "juegos_roles_011",
+    "category": "juegos_roles",
+    "level": 4,
+    "text": "¿Te molaría arrancarme la ropa como si no me conocieras y darme caña en un ascensor?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "dominacion_010",
+    "category": "dominacion",
+    "level": 7,
+    "text": "¿Me harías tu perra y me obligarías a comerte mientras me castigas por portarme mal?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "dominacion_011",
+    "category": "dominacion",
+    "level": 5,
+    "text": "¿Te pondría cachonda atarme y follarme tan duro que me dejes marcas?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_024",
+    "category": "trios",
+    "level": 4,
+    "text": "¿Me follarías mientras otro tío me la mete por detrás y tú miras cómo me rompen?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_025",
+    "category": "trios",
+    "level": 4,
+    "text": "¿Qué harías si te digo que traigas a una tía para que me coma mientras tú me cabalgas?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_026",
+    "category": "trios",
+    "level": 4,
+    "text": "¿Te imaginas chupándome con otra mientras las dos me bañan en saliva?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "sexo_publico_008",
+    "category": "sexo_publico",
+    "level": 5,
+    "text": "¿Me la chuparías en un tren lleno hasta que me corra en tu boca sin que nadie se dé cuenta?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "sexo_publico_009",
+    "category": "sexo_publico",
+    "level": 5,
+    "text": "¿Te pondría a mil follarme en un probador y que se escuchen los gemidos afuera?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "sexo_publico_010",
+    "category": "sexo_publico",
+    "level": 4,
+    "text": "¿Me follarías como loca sabiendo que nos están grabando para verlo luego juntos?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "sexo_publico_011",
+    "category": "sexo_publico",
+    "level": 4,
+    "text": "¿Qué harías conmigo si te digo que dejemos la ventana abierta para que nos pillen?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_015",
+    "category": "bisexualidad",
+    "level": 4,
+    "text": "¿Me harías mirar mientras te follas a una tía y luego me metes en el medio?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_016",
+    "category": "bisexualidad",
+    "level": 6,
+    "text": "¿Te imaginas comiéndole el coño a una mientras yo te doy por el culo sin parar?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "juegos_roles_012",
+    "category": "juegos_roles",
+    "level": 6,
+    "text": "¿Me follarías como mi profesora cachonda castigándome por ser un alumno malo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "juegos_roles_013",
+    "category": "juegos_roles",
+    "level": 4,
+    "text": "¿Qué harías si te digo que finjas ser una desconocida que me viola en un callejón?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_060",
+    "category": "fantasias",
+    "level": 5,
+    "text": "¿Me darías duro imaginando que soy [inserte famoso] y me dirías lo mucho que te pone?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_061",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Te pondría cachonda follarme como si fuera tu ídolo y gritar su nombre?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "sexo_publico_012",
+    "category": "sexo_publico",
+    "level": 4,
+    "text": "¿Me la chuparías en un tejado para que todo el vecindario vea lo guarra que eres?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "sexo_publico_013",
+    "category": "sexo_publico",
+    "level": 4,
+    "text": "¿Te molaría follarme en un coche con las ventanillas bajadas y que nos pillen?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_062",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Me agarrarías del cuello y me follarías contra el suelo hasta dejarme roto?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_063",
+    "category": "fantasias",
+    "level": 5,
+    "text": "¿Qué tan salvaje te pondrías si te pido que me des tan fuerte que grite como loco?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_064",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Me harías limpiarte con la lengua después de correrme dentro de ti?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_065",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Te imaginas follándome tan guarro que terminemos sudados y pegajosos por todos lados?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_066",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Qué harías si te digo que me metas lo que quieras mientras me la chupas?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_067",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Te pondría a mil restregarme tu coño en la cara y luego follarme hasta desmayarme?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "coqueteo_007",
+    "category": "coqueteo",
+    "level": 3,
+    "text": "¿Me follarías con tanta rabia que me dejarías el cuerpo temblando y lleno de arañazos?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_068",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Qué tan cerda te pondrías si te digo que me hagas correrme tres veces seguidas?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fetiches_005",
+    "category": "fetiches",
+    "level": 6,
+    "text": "¿Me meterías los dedos por detrás mientras me la meneas hasta que no pueda ni hablar?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_069",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Te imaginas follando conmigo en la ducha y llenándolo todo de gritos y agua?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fetiches_006",
+    "category": "fetiches",
+    "level": 6,
+    "text": "¿Qué harías si te pido que me uses como tu juguete sucio hasta que no quede nada de mí?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_017",
+    "category": "bisexualidad",
+    "level": 3,
+    "text": "¿Te pondría cachonda comerte a una tía mientras yo te miro y me pajeo como loco?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_018",
+    "category": "bisexualidad",
+    "level": 3,
+    "text": "¿Qué harías si te pillo lamiéndole el coño a una chica? ¿Me invitarías a unirme o me harías mirar?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_019",
+    "category": "bisexualidad",
+    "level": 3,
+    "text": "¿Te imaginas chupándole las tetas a una mientras yo te follo por detrás hasta correrme?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_020",
+    "category": "bisexualidad",
+    "level": 6,
+    "text": "¿Te molaría follarte a una tía con un strap-on mientras yo te doy por el culo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_021",
+    "category": "bisexualidad",
+    "level": 3,
+    "text": "¿Qué tan guarra te pondrías si te dejo elegir a una mujer para que te coma viva delante de mí?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_022",
+    "category": "bisexualidad",
+    "level": 3,
+    "text": "¿Te excita pensar en restregarte con una chica mientras yo te miro con la polla en la mano?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_023",
+    "category": "bisexualidad",
+    "level": 3,
+    "text": "¿Me harías mirar mientras te follas a una tía y luego me usas para terminarte?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_024",
+    "category": "bisexualidad",
+    "level": 3,
+    "text": "¿Qué harías si te digo que traigas a una amiga para que te lama mientras yo te meto los dedos?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_025",
+    "category": "bisexualidad",
+    "level": 3,
+    "text": "¿Te pondría a mil besarte con una tía y luego follarme con su sabor en tu boca?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_026",
+    "category": "bisexualidad",
+    "level": 3,
+    "text": "¿Te imaginas en una tijera con una chica mientras yo te miro y me corro encima de las dos?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_001",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "¿Te molaría verme follarme a otra mientras tú te tocas y me dices lo guarro que soy?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_002",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "¿Qué harías si te digo que me dejes chuparle la polla a un tío delante de ti?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_003",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "¿Te pondría cachonda que me folle a una tía y luego te haga lamer lo que queda?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_004",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "¿Me harías mirar mientras un tío te da duro y me dices que no puedo tocarte?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_005",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "¿Te imaginas viéndome comerle el coño a otra mientras tú te corres sola?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_006",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "¿Qué tan guarra te pondrías si me pillas follando con otro y te unes para mandarme?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_007",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Te excita la idea de que un tío me folle el culo mientras tú miras y te tocas?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_008",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "¿Me dejarías mirar mientras te follan y luego me harías limpiarte con la lengua?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_009",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "¿Te molaría que me folle a una pareja mientras tú decides cómo y dónde me corro?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_010",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "¿Qué harías si te digo que quiero verte con otro tío dándote caña mientras yo me pajeo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fetiches_007",
+    "category": "fetiches",
+    "level": 6,
+    "text": "¿Me pondrías de rodillas y me harías lamerte el coño hasta que te corras en mi cara?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fetiches_008",
+    "category": "fetiches",
+    "level": 6,
+    "text": "¿Te imaginas sentándote en mi boca y follarme la cara hasta dejarme empapado?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "dominacion_012",
+    "category": "dominacion",
+    "level": 6,
+    "text": "¿Qué tan cachonda te pondría atarme y usarme como tu juguete para correrme encima?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "dominacion_013",
+    "category": "dominacion",
+    "level": 6,
+    "text": "¿Me harías suplicar mientras me asfixias con tu culo y me das órdenes guarras?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "dominacion_014",
+    "category": "dominacion",
+    "level": 7,
+    "text": "¿Te molaría dominarme y follarme con un juguete mientras me dices lo puta que soy?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "dominacion_015",
+    "category": "dominacion",
+    "level": 6,
+    "text": "¿Me castigarías dándome azotes y luego montándome hasta que no pueda más?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fetiches_009",
+    "category": "fetiches",
+    "level": 6,
+    "text": "¿Qué harías si te digo que quiero que me uses como tu trono y me hagas lamer todo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "dominacion_016",
+    "category": "dominacion",
+    "level": 6,
+    "text": "¿Te pondría a mil tenerme atado mientras me follas la boca con lo que quieras?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fetiches_010",
+    "category": "fetiches",
+    "level": 6,
+    "text": "¿Me harías arrodillarme y comerte mientras me aprietas con tus piernas?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "dominacion_017",
+    "category": "dominacion",
+    "level": 6,
+    "text": "¿Te imaginas mandándome que te lama el culo mientras tú te corres como reina?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "orgias_015",
+    "category": "orgias",
+    "level": 7,
+    "text": "¿Te molaría follarme mientras otro tío se folla a su pareja al lado nuestro?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "orgias_016",
+    "category": "orgias",
+    "level": 7,
+    "text": "¿Qué harías si te invito a un club swinger y te pido que elijas con quién follarme?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "orgias_017",
+    "category": "orgias",
+    "level": 7,
+    "text": "¿Te pondría cachonda cambiarme por otra pareja y luego contarme cómo te dieron?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_001",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Te imaginas en una orgía donde me follas y luego te follan mientras yo miro?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "orgias_018",
+    "category": "orgias",
+    "level": 7,
+    "text": "¿Qué tan guarra te pondrías si nos intercambiamos con otra pareja y nos vemos follar?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "orgias_019",
+    "category": "orgias",
+    "level": 7,
+    "text": "¿Me harías mirar mientras te comes a la mujer de otro y el tío me la mete?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "orgias_020",
+    "category": "orgias",
+    "level": 7,
+    "text": "¿Te excita la idea de follarme en una cama rodeada de parejas haciendo lo mismo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "orgias_021",
+    "category": "orgias",
+    "level": 7,
+    "text": "¿Qué harías si te digo que quiero verte follar con otro mientras yo me tiro a su chica?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_002",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Te molaría que nos follen a los dos al mismo tiempo por otra pareja sin parar?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "orgias_022",
+    "category": "orgias",
+    "level": 7,
+    "text": "¿Te pondría a mil un intercambio donde me ves chuparla mientras a ti te dan duro?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "swingers_001",
+    "category": "swingers",
+    "level": 6,
+    "text": "¿Me harías lamerte mientras una tía te folla y un tío me mira pajeándose?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "swingers_002",
+    "category": "swingers",
+    "level": 6,
+    "text": "¿Te imaginas mandándome que chupe a un tío mientras tú te comes a su mujer?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "swingers_003",
+    "category": "swingers",
+    "level": 6,
+    "text": "¿Qué tan cachonda te pondría verme follar con una pareja mientras tú decides cómo me corro?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "swingers_004",
+    "category": "swingers",
+    "level": 6,
+    "text": "¿Me pondrías de rodillas para lamerte mientras otro te da por detrás y me humilla?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "swingers_005",
+    "category": "swingers",
+    "level": 6,
+    "text": "¿Te molaría follarme con una tía mientras su pareja nos graba y se toca?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "swingers_006",
+    "category": "swingers",
+    "level": 6,
+    "text": "¿Qué harías si te digo que quiero verte con una mujer y un hombre dándote a la vez?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "swingers_007",
+    "category": "swingers",
+    "level": 6,
+    "text": "¿Te pondría a mil sentarte en mi cara mientras otro me folla y una tía te lame?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "swingers_008",
+    "category": "swingers",
+    "level": 6,
+    "text": "¿Me harías mirar mientras te follan en un club swinger y luego me usas como quieras?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "swingers_009",
+    "category": "swingers",
+    "level": 6,
+    "text": "¿Te imaginas en una fiesta donde me follas, me cambias y luego me dominas?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_003",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Qué tan guarra te pondrías si te dejo ser la reina de una orgía conmigo de esclavo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fetiches_011",
+    "category": "fetiches",
+    "level": 6,
+    "text": "¿Me follarías con un juguete mientras una tía me la chupa y un tío te da por el culo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fetiches_012",
+    "category": "fetiches",
+    "level": 6,
+    "text": "¿Te pondría cachonda verme tragarme la leche de otro mientras tú te corres encima?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "swingers_010",
+    "category": "swingers",
+    "level": 7,
+    "text": "¿Qué harías si te digo que me dejes ser tu puta bisexual en una noche swinger?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "dominacion_018",
+    "category": "dominacion",
+    "level": 5,
+    "text": "¿Me harías lamerte el coño después de que otro te llene mientras me miras como reina?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_070",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Te imaginas follando conmigo y con otros hasta que estemos todos empapados y exhaustos?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_071",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Me pondrías a lamer a una tía mientras me follan y tú mandas como la jefa?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "dominacion_019",
+    "category": "dominacion",
+    "level": 5,
+    "text": "¿Qué tan cerda te pondrías si te digo que quiero verte con dos tíos y una tía dándome órdenes?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_072",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Te molaría que me folle a un tío mientras tú te sientas en mi cara y me ahogas?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_073",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Me harías chupar todo lo que te echen mientras me dominas y te corres?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_074",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Te pondría a mil una noche donde me usas, me cambias y me follan hasta reventar?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fetiches_013",
+    "category": "fetiches",
+    "level": 6,
+    "text": "¿Qué es lo que más te excita de una mujer? ¿Sus tetas, su culo, su cara, su forma de moverse…?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_075",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Te has masturbado alguna vez pensando en una chica específica? ¿Quién era y qué te imaginabas haciéndole?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_076",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Prefieres comerte un coño o que te lo coman? ¿O las dos cosas te ponen igual?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_077",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Qué tipo de chica te atrae físicamente? ¿Rubias, morenas, curvy, delgadas, con tattoos…?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_027",
+    "category": "bisexualidad",
+    "level": 3,
+    "text": "¿Te gustaría que yo te viera besando o tocando a otra mujer? ¿Cómo te imaginas que reaccionaría yo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_078",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Has probado alguna vez algo con una chica? ¿Qué fue lo que más te gustó?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_079",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Cuál es tu fantasía sexual más sucia que nunca le has contado a nadie?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_080",
+    "category": "fantasias",
+    "level": 3,
+    "text": "Si pudieras hacer cualquier cosa sexual ahora mismo sin consecuencias, ¿qué harías?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_081",
+    "category": "fantasias",
+    "level": 4,
+    "text": "¿Te excita que te miren mientras follas? ¿O que te graben?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_082",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Qué es lo más prohibido o taboo que te ha puesto cachonda alguna vez?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_028",
+    "category": "bisexualidad",
+    "level": 4,
+    "text": "¿Te gusta la idea de ser dominada por una mujer o de dominar tú a otra chica?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "sexo_publico_014",
+    "category": "sexo_publico",
+    "level": 4,
+    "text": "¿Has fantaseado con follar en público o en algún lugar arriesgado? ¿Dónde?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_027",
+    "category": "trios",
+    "level": 4,
+    "text": "¿Te gustaría probar un trío? ¿Con otra chica y yo, o con otro chico y yo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_028",
+    "category": "trios",
+    "level": 4,
+    "text": "En un trío con otra chica, ¿qué te gustaría hacerle a ella mientras yo te follo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_029",
+    "category": "bisexualidad",
+    "level": 4,
+    "text": "¿Te excita más ver cómo otra chica me chupa la verga, o que yo te coma el coño mientras ella te besa?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_030",
+    "category": "bisexualidad",
+    "level": 4,
+    "text": "¿Te gustaría que otra chica te lamiera el clítoris mientras yo te estoy penetrando?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_029",
+    "category": "trios",
+    "level": 5,
+    "text": "¿Cómo te imaginas un trío ideal? ¿Suave y sensual o bien salvaje y sucio?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_083",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Has fantaseado alguna vez con que dos personas te dan placer al mismo tiempo? ¿Cómo era?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_031",
+    "category": "bisexualidad",
+    "level": 4,
+    "text": "¿Te pondría cachonda ver cómo me follo a otra chica delante de ti? ¿O preferirías ser el centro de atención?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_030",
+    "category": "trios",
+    "level": 4,
+    "text": "Si hiciéramos un trío, ¿qué reglas te gustaría poner para que te sientas segura y muy excitada?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fetiches_014",
+    "category": "fetiches",
+    "level": 6,
+    "text": "¿Te gustaría que una chica te folle con un strap-on mientras yo te miro y me pajeo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_084",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Prefieres comerle el coño a una chica que está recién follada por mí?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_085",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Qué te pone más: besar a una chica suave o comértela bien agresiva y sucia?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fetiches_015",
+    "category": "fetiches",
+    "level": 6,
+    "text": "¿Te excita la idea de que una chica te orine encima o que tú le orines a ella en un juego caliente?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "orgias_023",
+    "category": "orgias",
+    "level": 7,
+    "text": "¿Cuál es tu fantasía más guarra que involucra semen de varias personas?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fetiches_016",
+    "category": "fetiches",
+    "level": 7,
+    "text": "¿Te gustaría que te usen como juguete sexual varias horas seguidas?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_086",
+    "category": "fantasias",
+    "level": 7,
+    "text": "¿Has fantaseado con ser una puta en una fiesta y que te pasen de mano en mano?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_011",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "¿Te has imaginado alguna vez follando con otro hombre que no sea yo? ¿Cómo era él?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_012",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "¿Qué parte del cuerpo o qué cualidad de otro hombre te pone más cachonda? (tamaño, fuerza, forma de follar…)",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_087",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Te gustaría probar una verga más grande/gruesa que la mía? ¿Cómo te imaginas que se sentiría?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_013",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "¿Prefieres que otro hombre te folle suave y romántico o bien duro y salvaje?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_014",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "¿Te excita contarme con detalles cómo te folló otro hombre en tu imaginación?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_088",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Has fantaseado con que un amigo mío te coja mientras yo estoy cerca?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_015",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "¿Qué te gustaría que otro hombre te haga que yo no te hago (o que te haga mejor)?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_089",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Te pondría muy mojada que yo te prepare el coño para que otro te folle?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_016",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "¿Te excitaría que yo te vea follando con otro hombre? ¿Cómo te imaginas mi cara mientras te lo hace?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_090",
+    "category": "fantasias",
+    "level": 4,
+    "text": "¿Quieres que yo esté mirando, grabando o participando mientras otro te penetra?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_091",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Te gusta la idea de que yo te limpie el coño después de que otro te haya corrido adentro?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "dominacion_020",
+    "category": "dominacion",
+    "level": 5,
+    "text": "¿Qué te pondría más: que yo esté atado mirando cómo te follan, o que yo esté libre y excitado?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fetiches_017",
+    "category": "fetiches",
+    "level": 6,
+    "text": "¿Te excita humillarme un poco diciéndome lo mejor que folla otro comparado conmigo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_092",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Quieres que busquemos juntos un hombre para que te folle delante de mí?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_032",
+    "category": "bisexualidad",
+    "level": 4,
+    "text": "¿Te excitaría verme follando a otra chica? ¿Qué parte te pondría más cachonda?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_033",
+    "category": "bisexualidad",
+    "level": 4,
+    "text": "¿Quieres que te haga comerle el coño a la otra chica mientras yo la estoy penetrando?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_093",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Te gusta la idea de que yo te cuente cómo me follé a otra y te ponga cachonda con los detalles?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_094",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Preferirías verme con una chica más joven/hermosa o que sea parecida a ti?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_034",
+    "category": "bisexualidad",
+    "level": 4,
+    "text": "¿Te pondría caliente limpiarme la verga después de haber follado con otra mujer?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_035",
+    "category": "bisexualidad",
+    "level": 4,
+    "text": "¿Quieres que te ate y te obligue a mirar cómo me como a otra chica?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_031",
+    "category": "trios",
+    "level": 4,
+    "text": "En un trío MMF (dos hombres y tú), ¿quieres que te follen los dos al mismo tiempo (doble penetración)?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_095",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Te gustaría que un hombre te folle mientras yo te como el clítoris?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_032",
+    "category": "trios",
+    "level": 4,
+    "text": "¿Qué te excita más: un trío con otra chica o uno con otro chico?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_096",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Has fantaseado con que dos hombres te corran adentro o en la cara al mismo tiempo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_097",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Quieres reglas claras como “solo yo te beso en la boca” o prefieres que todo fluya libre?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_033",
+    "category": "trios",
+    "level": 4,
+    "text": "Después de un trío o experiencia con otro, ¿te gustaría que folláramos solos para “reclamarme”?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_017",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "De todas estas fantasías (bisexuales, tríos, cuckold, cuckquean), ¿cuál es la que más te moja ahora mismo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_098",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Hay algo de esto que te da vergüenza admitir pero te pone muchísimo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_099",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Qué límites o palabras de seguridad necesitarías para sentirte segura explorando esto?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_100",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Quieres que empecemos suave (solo hablando y masturbándonos con las fantasías) o ya estás pensando en algo real?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_101",
+    "category": "fantasias",
+    "level": 3,
+    "text": "¿Qué te gustaría hacerme a mí después de contarme todas tus fantasías más sucias?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trans_002",
+    "category": "trans",
+    "level": 6,
+    "text": "¿Te atraen las mujeres trans? ¿Qué es lo que más te llama la atención de ellas (su cuerpo, voz, pene, tetas, etc.)?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trans_003",
+    "category": "trans",
+    "level": 3,
+    "text": "¿Has fantaseado alguna vez besando, tocando o comiéndole el coño/verg a una chica trans?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trans_004",
+    "category": "trans",
+    "level": 6,
+    "text": "¿Te excita la idea de chuparle la verga a una mujer trans mientras yo te miro o participo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trans_005",
+    "category": "trans",
+    "level": 6,
+    "text": "En un trío, ¿te gustaría incluir a una chica trans? ¿Qué rol te imaginas para ella?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trans_006",
+    "category": "trans",
+    "level": 6,
+    "text": "¿Prefieres una chica trans con tetas grandes y femenina o con pene más grande y dominante?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trans_007",
+    "category": "trans",
+    "level": 6,
+    "text": "¿Te pondría muy cachonda que una chica trans te folle con su verga mientras yo te como el clítoris o te beso?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trans_008",
+    "category": "trans",
+    "level": 6,
+    "text": "¿Cómo te imaginas la diferencia entre follar con una chica cis vs una trans?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trans_009",
+    "category": "trans",
+    "level": 6,
+    "text": "¿Te gustaría que busquemos juntos una chica trans para probar algo real?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trans_010",
+    "category": "trans",
+    "level": 6,
+    "text": "¿Quieres que yo te prepare el culo o el coño para que una trans te penetre?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trans_011",
+    "category": "trans",
+    "level": 6,
+    "text": "¿Qué es lo más sucio o taboo que te imaginas haciendo con una mujer trans?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trans_012",
+    "category": "trans",
+    "level": 6,
+    "text": "¿Te excita que una chica trans te corra adentro o en la cara mientras yo te estoy follando?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trans_013",
+    "category": "trans",
+    "level": 6,
+    "text": "¿Hay alguna fantasía específica con trans que te da vergüenza pero te moja muchísimo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trans_014",
+    "category": "trans",
+    "level": 3,
+    "text": "¿Te atraen las mujeres trans? ¿Qué es lo primero que te llama la atención de ellas?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trans_015",
+    "category": "trans",
+    "level": 3,
+    "text": "¿Has visto porno con chicas trans y te ha puesto algo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trans_016",
+    "category": "trans",
+    "level": 3,
+    "text": "¿Te imaginas besando o acariciando a una mujer trans?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trans_017",
+    "category": "trans",
+    "level": 6,
+    "text": "¿Te gustaría tocarle la verga a una chica trans mientras la besas?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trans_018",
+    "category": "trans",
+    "level": 6,
+    "text": "¿Prefieres una mujer trans muy femenina con tetas grandes o con rasgos más mixtos?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trans_019",
+    "category": "trans",
+    "level": 6,
+    "text": "¿Te excita la idea de comérselo a una chica trans?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trans_020",
+    "category": "trans",
+    "level": 6,
+    "text": "¿Te gustaría chuparle la verga a una mujer trans mientras yo te miro?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trans_021",
+    "category": "trans",
+    "level": 6,
+    "text": "¿Quieres que una chica trans te folle el coño o el culo con su verga mientras yo participo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trans_022",
+    "category": "trans",
+    "level": 6,
+    "text": "¿Te pondría muy cachonda que una trans te corra adentro y yo te limpie después?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_004",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Te excita que una mujer trans te use como puta, te folle duro y te llene de semen mientras yo miro atado?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_005",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Fantaseas con que varias chicas trans te pasen y te usen todos los agujeros al mismo tiempo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_006",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Quieres que una trans te mee encima o te haga tragar su semen mezclado con el mío mientras te tratan de zorra degenerada?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_036",
+    "category": "bisexualidad",
+    "level": 6,
+    "text": "¿Te atraen las mujeres? ¿Qué es lo primero que te llama la atención de una chica?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_037",
+    "category": "bisexualidad",
+    "level": 6,
+    "text": "¿Qué parte del cuerpo de una mujer te gusta más? (tetas, culo, labios, etc.)",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_038",
+    "category": "bisexualidad",
+    "level": 6,
+    "text": "¿Has fantaseado alguna vez besando o tocando a una chica?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_039",
+    "category": "bisexualidad",
+    "level": 6,
+    "text": "¿Qué tipo de chica te pone más (rubias, morenas, curvy, delgadas…)?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_040",
+    "category": "bisexualidad",
+    "level": 6,
+    "text": "¿Te has masturbado pensando en una chica específica?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_041",
+    "category": "bisexualidad",
+    "level": 6,
+    "text": "¿Prefieres comerte un coño o que te lo coman?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_042",
+    "category": "bisexualidad",
+    "level": 6,
+    "text": "¿Te gustaría que yo te vea besando o tocando a otra mujer?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_043",
+    "category": "bisexualidad",
+    "level": 6,
+    "text": "¿Te excita más una chica sumisa o una dominante?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_044",
+    "category": "bisexualidad",
+    "level": 6,
+    "text": "¿Te gustaría que una chica te chupe las tetas mientras yo te follo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_045",
+    "category": "bisexualidad",
+    "level": 6,
+    "text": "¿Qué es lo más sucio que te imaginas haciendo con una mujer (lamer, dedos, etc.)?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_046",
+    "category": "bisexualidad",
+    "level": 6,
+    "text": "¿Te pondría muy cachonda comerte un coño recién follado por mí?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_102",
+    "category": "fantasias",
+    "level": 6,
+    "text": "¿Cuál es tu fantasía sexual más suave que te da curiosidad?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_103",
+    "category": "fantasias",
+    "level": 6,
+    "text": "¿Te excita que te miren mientras follas?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fetiches_018",
+    "category": "fetiches",
+    "level": 6,
+    "text": "¿Qué juguete te gustaría usar con otra persona?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "sexo_publico_015",
+    "category": "sexo_publico",
+    "level": 6,
+    "text": "¿Has fantaseado con follar en público o en un lugar arriesgado?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_104",
+    "category": "fantasias",
+    "level": 6,
+    "text": "¿Te gustaría que te aten y te usen?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "sexo_publico_016",
+    "category": "sexo_publico",
+    "level": 6,
+    "text": "¿Te excita la idea de que te filmen y verlo después?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_105",
+    "category": "fantasias",
+    "level": 6,
+    "text": "¿Cuál es tu fantasía más sucia que nunca le has contado a nadie?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_106",
+    "category": "fantasias",
+    "level": 7,
+    "text": "¿Te gusta la idea de ser usada como puta varias horas?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_107",
+    "category": "fantasias",
+    "level": 7,
+    "text": "¿Fantaseas con que te pasen de mano en mano en una fiesta?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_034",
+    "category": "trios",
+    "level": 6,
+    "text": "¿Te gustaría probar un trío con otra chica y conmigo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_035",
+    "category": "trios",
+    "level": 6,
+    "text": "¿Cómo te imaginas un trío ideal (suave o salvaje)?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_036",
+    "category": "trios",
+    "level": 6,
+    "text": "¿Qué te gustaría hacerle a ella mientras yo te follo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_037",
+    "category": "trios",
+    "level": 6,
+    "text": "¿Prefieres que ella te coma a ti o que te vea chupándomela a mí?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_038",
+    "category": "trios",
+    "level": 6,
+    "text": "¿Te gustaría que se siente en tu cara mientras yo te penetro?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_039",
+    "category": "trios",
+    "level": 6,
+    "text": "¿Quieres doble penetración o que te usen los dos al mismo tiempo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_040",
+    "category": "trios",
+    "level": 6,
+    "text": "¿Te excita que nos repartamos a la otra chica de formas sucias?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_041",
+    "category": "trios",
+    "level": 6,
+    "text": "¿Quieres grabar el trío para verlo después?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_042",
+    "category": "trios",
+    "level": 6,
+    "text": "¿Qué es lo más puerco que te gustaría que pase en un trío (semen, escupitajos, nalgadas fuertes)?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_018",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Te has imaginado follando con otro hombre?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_019",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Qué cualidad de otro hombre te pone cachonda (tamaño, fuerza…)?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_020",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Te gustaría probar una verga más grande que la mía?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_021",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Prefieres que otro te folle suave o duro?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_022",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Te excita contarme con detalles cómo te folló otro en tu imaginación?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_023",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Quieres que te prepare el coño para que otro te folle?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_024",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Te gustaría que un amigo mío te coja?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_025",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Te excita que otro te corra adentro y yo te limpie después?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_026",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Te excitaría que yo te vea follando con otro hombre?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_027",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Quieres que yo mire o grabe mientras otro te penetra?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_028",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Te gusta la idea de que yo esté atado mirando?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_029",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Te excita humillarme diciendo que otro folla mejor?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_030",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Quieres que busquemos un hombre para que te folle delante de mí?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_031",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Te excitaría verme follando con otra chica?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_032",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Quieres que te haga comerle el coño a ella mientras yo la follo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_033",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Te gusta que te cuente detalles de cómo me follé a otra?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_034",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Te pondría caliente limpiarme la verga después de follar con otra?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_035",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Quieres que te ate y te obligue a mirar?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_007",
+    "category": "abismo",
+    "level": 7,
+    "text": "¿Te atraen las mujeres trans? ¿Qué es lo primero que te llama la atención?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_008",
+    "category": "abismo",
+    "level": 7,
+    "text": "¿Has visto porno con chicas trans y te ha puesto algo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_009",
+    "category": "abismo",
+    "level": 7,
+    "text": "¿Te imaginas besando o acariciando suavemente a una mujer trans?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_010",
+    "category": "abismo",
+    "level": 7,
+    "text": "¿Te gustaría tocarle la verga a una chica trans mientras la besas?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_011",
+    "category": "abismo",
+    "level": 7,
+    "text": "¿Prefieres una mujer trans muy femenina con tetas grandes?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_012",
+    "category": "abismo",
+    "level": 7,
+    "text": "¿Te excita la idea de comérselo a una chica trans?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_013",
+    "category": "abismo",
+    "level": 7,
+    "text": "¿Te gustaría chuparle la verga a una mujer trans mientras yo miro?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_014",
+    "category": "abismo",
+    "level": 7,
+    "text": "¿Quieres que una chica trans te folle el coño o el culo con su verga mientras participo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_015",
+    "category": "abismo",
+    "level": 7,
+    "text": "¿Te pondría cachonda que una trans te corra adentro y yo te limpie?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_016",
+    "category": "abismo",
+    "level": 7,
+    "text": "¿Te excita que una mujer trans te use duro y te llene de semen?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_017",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Fantaseas con que varias chicas trans te pasen y te usen todos los agujeros?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_018",
+    "category": "abismo",
+    "level": 7,
+    "text": "¿Quieres que una trans te mee encima o te haga tragar semen mezclado mientras te tratan de zorra degenerada?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_019",
+    "category": "abismo",
+    "level": 7,
+    "text": "¿Te pone que te follen trans al mismo tiempo que yo, llenándote como una puta completa?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_020",
+    "category": "abismo",
+    "level": 7,
+    "text": "De todo lo que me has contado, ¿qué es lo que más ganas te da probar?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_021",
+    "category": "abismo",
+    "level": 7,
+    "text": "¿Hay algo que te da vergüenza pero te excita muchísimo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_022",
+    "category": "abismo",
+    "level": 7,
+    "text": "¿Qué límites o reglas quieres para sentirte segura?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_023",
+    "category": "abismo",
+    "level": 7,
+    "text": "¿Quieres empezar solo hablando y masturbándonos con estas fantasías?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_024",
+    "category": "abismo",
+    "level": 7,
+    "text": "¿Qué te gustaría hacerme a mí después de contarme todo esto?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_047",
+    "category": "bisexualidad",
+    "level": 3,
+    "text": "¿Te atraen las mujeres? ¿Qué es lo primero que te llama la atención de una chica?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_048",
+    "category": "bisexualidad",
+    "level": 6,
+    "text": "¿Qué parte del cuerpo femenino te gusta más (tetas, culo, labios, cintura)?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_049",
+    "category": "bisexualidad",
+    "level": 3,
+    "text": "¿Has fantaseado alguna vez besando o acariciando suavemente a una chica?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_050",
+    "category": "bisexualidad",
+    "level": 3,
+    "text": "¿Qué tipo de chica te pone más (rubias, morenas, curvy, delgadas, con tattoos)?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_051",
+    "category": "bisexualidad",
+    "level": 3,
+    "text": "¿Te has masturbado alguna vez pensando en una mujer? ¿Quién era?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_052",
+    "category": "bisexualidad",
+    "level": 3,
+    "text": "¿Prefieres comerte un coño o que te lo coman? ¿O las dos cosas?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_053",
+    "category": "bisexualidad",
+    "level": 3,
+    "text": "¿Te gustaría que yo te vea besando o tocando suavemente a otra mujer?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_054",
+    "category": "bisexualidad",
+    "level": 3,
+    "text": "¿Qué te excita más de una mujer: que sea sumisa o dominante?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_055",
+    "category": "bisexualidad",
+    "level": 3,
+    "text": "¿Te gustaría que una chica te chupe las tetas mientras yo te beso?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_056",
+    "category": "bisexualidad",
+    "level": 3,
+    "text": "¿Te imaginas lamiendo un coño por primera vez? ¿Cómo crees que se sentiría?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_057",
+    "category": "bisexualidad",
+    "level": 3,
+    "text": "¿Te pondría cachonda comerte un coño recién follado por mí?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_058",
+    "category": "bisexualidad",
+    "level": 3,
+    "text": "¿Quieres que yo te mire mientras le comes el coño a una chica?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_059",
+    "category": "bisexualidad",
+    "level": 3,
+    "text": "¿Te excita la idea de que una chica te meta los dedos mientras yo te follo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_060",
+    "category": "bisexualidad",
+    "level": 3,
+    "text": "¿Quieres que una chica te chupe el clítoris mientras yo te penetro?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "bisexualidad_061",
+    "category": "bisexualidad",
+    "level": 6,
+    "text": "¿Te gusta la idea de lamerle el culo a una chica mientras yo la follo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_043",
+    "category": "trios",
+    "level": 4,
+    "text": "¿Cuál es tu fantasía sexual más suave que te da curiosidad?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_044",
+    "category": "trios",
+    "level": 4,
+    "text": "¿Te excita que te miren mientras follamos?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_045",
+    "category": "trios",
+    "level": 4,
+    "text": "¿Qué juguete sexual te gustaría probar conmigo y otra persona?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_046",
+    "category": "trios",
+    "level": 4,
+    "text": "¿Has fantaseado con follar en un lugar público o arriesgado?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_047",
+    "category": "trios",
+    "level": 4,
+    "text": "¿Te gustaría que te aten suavemente y te besen por todo el cuerpo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_048",
+    "category": "trios",
+    "level": 4,
+    "text": "¿Te gustaría probar un trío con otra chica y conmigo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_049",
+    "category": "trios",
+    "level": 5,
+    "text": "¿Cómo te imaginas nuestro primer trío (suave y romántico o salvaje)?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_050",
+    "category": "trios",
+    "level": 4,
+    "text": "¿Qué te gustaría hacerle a ella mientras yo te follo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_051",
+    "category": "trios",
+    "level": 4,
+    "text": "¿Prefieres que ella te coma primero o verte chupándomela a mí?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_052",
+    "category": "trios",
+    "level": 4,
+    "text": "¿Te excita sentarte en su cara mientras yo te penetro?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_053",
+    "category": "trios",
+    "level": 4,
+    "text": "¿Quieres que te grabemos en un trío para verlo después juntos?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_054",
+    "category": "trios",
+    "level": 4,
+    "text": "¿Te gustaría doble penetración (dedos + verga) en un trío?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_055",
+    "category": "trios",
+    "level": 6,
+    "text": "¿Qué es lo más sucio que te imaginas en un trío (nalgadas, escupitajos, semen)?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_056",
+    "category": "trios",
+    "level": 4,
+    "text": "¿Quieres que otra chica te haga squirt mientras yo te beso?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_057",
+    "category": "trios",
+    "level": 4,
+    "text": "¿Te excita que nos repartamos a la otra chica de formas bien cachondas?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_036",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Te has imaginado follando con otro hombre? ¿Cómo era?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_037",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Qué cualidad de otro hombre te pone más (tamaño, fuerza, forma de follar)?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_038",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Te gustaría probar una verga más grande o gruesa que la mía?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_039",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Prefieres que otro hombre te folle suave o bien duro?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_040",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Te excita contarme con detalles cómo te folló otro en tu fantasía?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_041",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Quieres que yo te prepare el coño para que otro te folle?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_042",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Te gustaría que un amigo mío te coja mientras yo miro?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_043",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Te excitaría que yo te vea follando con otro hombre?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_044",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Quieres que yo esté mirando o grabando mientras otro te penetra?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_045",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Te gusta la idea de que yo esté atado viendo cómo te follan?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_046",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Te excita humillarme diciéndome que otro folla mejor que yo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_047",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Quieres que busquemos juntos un hombre para que te folle delante de mí?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_048",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Te pondría muy cachonda que otro te corra adentro y yo te limpie el creampie?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_049",
+    "category": "hotwife_cuckold",
+    "level": 6,
+    "text": "¿Quieres que otro te folle mientras yo te como el clítoris?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "orgias_024",
+    "category": "orgias",
+    "level": 7,
+    "text": "¿Te excita la idea de que varios hombres te usen mientras yo miro?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_050",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "¿Te excitaría verme follando con otra chica? ¿Qué parte te pondría más?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_051",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "¿Quieres que te haga comerle el coño a ella mientras yo la penetro?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_052",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "¿Te gusta que te cuente con detalles cómo me follé a otra mujer?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_053",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "¿Te pondría caliente limpiarme la verga después de follar con otra?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_054",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "¿Quieres que te ate y te obligue a mirar cómo me como a otra chica?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_055",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "¿Qué te gustaría que yo haga con otra mujer mientras tú miras?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_056",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "¿Te excita que yo te compare con otra chica mientras te follo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_057",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "¿Quieres que juguemos a que yo te cuento una fantasía con otra persona mientras te masturbo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_058",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "¿Te gustaría que ambos elijamos juntos a la persona para un trío?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_059",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "¿Qué reglas quieres para que los dos nos sintamos seguros y muy excitados?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_060",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "¿Quieres que después de un trío follemos solos para “reclamarnos”?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_061",
+    "category": "hotwife_cuckold",
+    "level": 7,
+    "text": "¿Te excita que yo te diga lo puta que te ves con otra persona?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_062",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "¿Quieres que te marque (nalgadas, mordidas) después de que otro te folle?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_063",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "¿Te gustaría que ambos nos contemos nuestras fantasías más sucias mientras follamos?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "hotwife_cuckold_064",
+    "category": "hotwife_cuckold",
+    "level": 5,
+    "text": "¿Qué es lo que más te pone de compartir fantasías conmigo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_025",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Te atraen las mujeres trans? ¿Qué es lo primero que te llama la atención?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_026",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Has visto porno con chicas trans y te ha puesto algo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_027",
+    "category": "abismo",
+    "level": 7,
+    "text": "¿Te imaginas besando o acariciando suavemente a una mujer trans?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_028",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Te gustaría tocarle la verga a una chica trans mientras la besas?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_029",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Prefieres una mujer trans muy femenina con tetas grandes?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_030",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Te excita la idea de comérselo a una chica trans?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_031",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Te gustaría chuparle la verga a una mujer trans mientras yo miro?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_032",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Quieres que una chica trans te folle el coño o el culo mientras yo participo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_033",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Te pondría cachonda que una trans te corra adentro y yo te limpie?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_034",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Te excita que una mujer trans te use duro y te llene de semen?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_035",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Quieres que una trans te folle mientras yo te como el clítoris?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_036",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Te gustaría que una chica trans te mee encima en un juego caliente?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_037",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Fantaseas con que varias chicas trans te usen todos los agujeros al mismo tiempo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_038",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Quieres que te traten de zorra degenerada mientras varias trans te follan?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_039",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Te excita que una trans te corra en la cara mientras yo te follo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_040",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Quieres doble penetración con verga trans + la mía?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_041",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Te pone que te llenen de semen por todos lados (boca, coño, culo, cara)?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_042",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Fantaseas con ser la puta de un grupo de chicas trans y yo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_043",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Quieres que te obliguen a tragar semen mezclado (mío y de trans)?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_044",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Te excita la idea de que te usen como cum-dumpster sin parar?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_045",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Quieres que te filmen siendo follada por trans y yo mientras te humillan?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_046",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Te pone que te degraden verbalmente llamándote puta, guarra, degenerada?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_047",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Fantaseas con orgías donde solo te usen trans y yo como la única hembra?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_048",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Quieres que busquemos una o varias chicas trans para hacer realidad algo de esto?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "abismo_049",
+    "category": "abismo",
+    "level": 8,
+    "text": "¿Qué es lo más taboo y degenerado que te imaginas haciendo con mujeres trans y conmigo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_108",
+    "category": "fantasias",
+    "level": 6,
+    "text": "De todo lo que hemos hablado, ¿qué fantasía te moja más ahora mismo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_109",
+    "category": "fantasias",
+    "level": 6,
+    "text": "¿Hay algo que te da vergüenza admitir pero te excita muchísimo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_110",
+    "category": "fantasias",
+    "level": 6,
+    "text": "¿Qué límites o palabras de seguridad quieres para sentirte segura?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_111",
+    "category": "fantasias",
+    "level": 6,
+    "text": "¿Quieres que empecemos solo con fantasías habladas y masturbándonos juntos?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_112",
+    "category": "fantasias",
+    "level": 6,
+    "text": "¿Qué te gustaría hacerme a mí después de contarme tus fantasías más sucias?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_113",
+    "category": "fantasias",
+    "level": 7,
+    "text": "¿Quieres que yo te cuente mis fantasías más degeneradas mientras te follo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "trios_058",
+    "category": "trios",
+    "level": 6,
+    "text": "¿Te excita planear juntos cómo sería nuestro primer trío o experiencia real?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "dominacion_021",
+    "category": "dominacion",
+    "level": 6,
+    "text": "¿Qué te pondría más: que yo sea dominante o que ambos seamos sumisos con terceros?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_114",
+    "category": "fantasias",
+    "level": 6,
+    "text": "¿Quieres que te ate y te use mientras te cuento cómo te follan otros?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_115",
+    "category": "fantasias",
+    "level": 6,
+    "text": "¿Te gusta la idea de que después de una experiencia caliente yo te reclame follándote duro?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_116",
+    "category": "fantasias",
+    "level": 6,
+    "text": "¿Quieres que busquemos personas reales juntos (apps, fiestas, etc.)?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_117",
+    "category": "fantasias",
+    "level": 6,
+    "text": "¿Te excita la idea de que te marque como mía después de que otros te usen?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_118",
+    "category": "fantasias",
+    "level": 7,
+    "text": "¿Qué es lo más puerco y degenerado que te gustaría probar conmigo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_119",
+    "category": "fantasias",
+    "level": 6,
+    "text": "¿Quieres que esto se convierta en un juego habitual entre nosotros?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_120",
+    "category": "fantasias",
+    "level": 6,
+    "text": "¿Qué fantasía nueva quieres que inventemos juntos ahora mismo?",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  },
+  {
+    "id": "fantasias_121",
+    "category": "fantasias",
+    "level": 3,
+    "text": "Después de cada respuesta pregunta: “¿Y tú qué me harías a mí en esa situación?” para que sea mutuo.",
+    "isPremium": false,
+    "isCustom": false,
+    "isActive": true
+  }
+]
