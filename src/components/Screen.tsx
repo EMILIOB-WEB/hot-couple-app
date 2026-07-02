@@ -19,6 +19,7 @@ export function Screen({ children }: Props) {
       <View style={styles.glowBottom} />
 
       <ScrollView
+        style={styles.scroller}
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
       >
@@ -30,6 +31,12 @@ export function Screen({ children }: Props) {
 
 const styles = StyleSheet.create({
   root: {
+    flex: 1,
+    width: "100%",
+    backgroundColor: colors.background,
+    overflow: "hidden"
+  },
+  scroller: {
     flex: 1,
     backgroundColor: colors.background
   },
