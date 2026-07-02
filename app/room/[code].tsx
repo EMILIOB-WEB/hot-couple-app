@@ -37,6 +37,7 @@ type Progress = {
   unlockedIndex: number;
   answersByCategory: Record<string, number>;
   usedQuestionIdsByCategory: Record<string, string[]>;
+  completedRoundIds: string[];
 };
 
 type Round = {
@@ -66,7 +67,8 @@ function createEmptyProgress(): Progress {
   return {
     unlockedIndex: 0,
     answersByCategory: {},
-    usedQuestionIdsByCategory: {}
+    usedQuestionIdsByCategory: {},
+    completedRoundIds: []
   };
 }
 
@@ -75,7 +77,10 @@ function normalizeProgress(progress: Partial<Progress> | null): Progress {
     unlockedIndex:
       typeof progress?.unlockedIndex === "number" ? progress.unlockedIndex : 0,
     answersByCategory: progress?.answersByCategory ?? {},
-    usedQuestionIdsByCategory: progress?.usedQuestionIdsByCategory ?? {}
+    usedQuestionIdsByCategory: progress?.usedQuestionIdsByCategory ?? {},
+    completedRoundIds: Array.isArray(progress?.completedRoundIds)
+      ? progress.completedRoundIds
+      : []
   };
 }
 
@@ -101,10 +106,15 @@ export default function RoomScreen() {
   const [savingAnswer, setSavingAnswer] = useState(false);
 
   const [progress, setProgress] = useState<Progress>(createEmptyProgress());
+  const [progressLoaded, setProgressLoaded] = useState(false);
 
   const hasAnswered = answers.some(
     (item) => item.participant_id === participantId
   );
+  const answeredParticipantIds = new Set(
+    answers.map((item) => item.participant_id)
+  );
+  const bothAnswered = answeredParticipantIds.size >= 2;
 
   const category = activeRound
     ? categories.find((item) => item.id === activeRound.category)
@@ -112,6 +122,8 @@ export default function RoomScreen() {
 
   useEffect(() => {
     if (!joined || !nickname.trim()) return;
+
+    setProgressLoaded(false);
 
     if (Platform.OS === "web" && typeof window !== "undefined") {
       const key = getStorageKey(roomCode, nickname);
@@ -126,7 +138,13 @@ export default function RoomScreen() {
       } else {
         setProgress(createEmptyProgress());
       }
+
+      setProgressLoaded(true);
+      return;
     }
+
+    setProgress(createEmptyProgress());
+    setProgressLoaded(true);
   }, [joined, nickname, roomCode]);
 
   useEffect(() => {
@@ -332,8 +350,10 @@ export default function RoomScreen() {
     }
   };
 
-  const updateLocalProgressAfterAnswer = () => {
-    if (!activeRound) return;
+  const updateLocalProgressAfterCompletedRound = () => {
+    if (!activeRound || progress.completedRoundIds.includes(activeRound.id)) {
+      return;
+    }
 
     const selectedCategory = activeRound.category;
     const currentCount = progress.answersByCategory[selectedCategory] ?? 0;
@@ -365,11 +385,26 @@ export default function RoomScreen() {
       usedQuestionIdsByCategory: {
         ...progress.usedQuestionIdsByCategory,
         [selectedCategory]: [...previousUsedIds, activeRound.question_id]
-      }
+      },
+      completedRoundIds: [...progress.completedRoundIds, activeRound.id]
     };
 
     saveProgress(nextProgress);
   };
+
+  useEffect(() => {
+    if (!progressLoaded || !activeRound || !hasAnswered || !bothAnswered) {
+      return;
+    }
+
+    updateLocalProgressAfterCompletedRound();
+  }, [
+    progressLoaded,
+    activeRound?.id,
+    answers.length,
+    hasAnswered,
+    bothAnswered
+  ]);
 
   const submitAnswer = async () => {
     if (!answer.trim() || !activeRound || !roomId || !participantId) {
@@ -386,8 +421,6 @@ export default function RoomScreen() {
         participantId,
         answerText: answer.trim()
       });
-
-      updateLocalProgressAfterAnswer();
 
       const nextAnswers = await getAnswersByRound(activeRound.id);
       setAnswers(nextAnswers);
@@ -463,16 +496,15 @@ export default function RoomScreen() {
   if (activeRound) {
     const answered = progress.answersByCategory[activeRound.category] ?? 0;
     const progressPercent = Math.min(answered / QUESTIONS_TO_UNLOCK, 1) * 100;
-    const bothAnswered = answers.length >= 2;
-
     return (
       <Screen>
         <View style={styles.questionHeader}>
           <Pressable
             onPress={() => {
-              setActiveRound(null);
-              setAnswers([]);
-              setAnswer("");
+              Alert.alert(
+                "Ronda activa",
+                "Espera a que ambos respondan antes de volver a las etapas."
+              );
             }}
             style={styles.backButton}
           >
