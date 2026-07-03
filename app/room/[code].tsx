@@ -609,7 +609,7 @@ export default function RoomScreen() {
           {participants.map((participant) => (
             <View key={participant.id} style={styles.participantPill}>
               <Text style={styles.participantText}>
-                ❤️ {participant.nickname}
+                {participant.nickname}
               </Text>
             </View>
           ))}
@@ -720,30 +720,33 @@ export default function RoomScreen() {
 }
 
 const styles = StyleSheet.create({
-  heroHeader: { marginBottom: 28 },
+  heroHeader: {
+    marginBottom: 26,
+    paddingTop: 10
+  },
   appPill: {
     alignSelf: "flex-start",
-    paddingHorizontal: 14,
-    height: 32,
+    paddingHorizontal: 12,
+    height: 30,
     borderRadius: 999,
-    backgroundColor: "rgba(255,45,85,0.16)",
+    backgroundColor: "rgba(255,255,255,0.08)",
     borderWidth: 1,
-    borderColor: "rgba(255,45,85,0.28)",
+    borderColor: "rgba(255,255,255,0.14)",
     justifyContent: "center",
     marginBottom: 18
   },
   appPillText: {
-    color: colors.primary,
+    color: colors.gold,
     fontSize: 11,
     fontWeight: "900",
     letterSpacing: 1.4
   },
   heroTitle: {
     color: colors.text,
-    fontSize: 46,
-    lineHeight: 48,
+    fontSize: 42,
+    lineHeight: 46,
     fontWeight: "900",
-    letterSpacing: -2
+    letterSpacing: 0
   },
   heroSubtitle: {
     color: colors.textSecondary,
@@ -763,15 +766,18 @@ const styles = StyleSheet.create({
     lineHeight: 18,
     textAlign: "center"
   },
-  homeHeader: { marginBottom: 20 },
+  homeHeader: {
+    marginBottom: 22,
+    paddingTop: 8
+  },
   roomPill: {
     alignSelf: "flex-start",
-    paddingHorizontal: 14,
-    height: 32,
+    paddingHorizontal: 12,
+    height: 30,
     borderRadius: 999,
-    backgroundColor: "rgba(255,255,255,0.08)",
+    backgroundColor: "rgba(255,255,255,0.075)",
     borderWidth: 1,
-    borderColor: "rgba(255,255,255,0.12)",
+    borderColor: "rgba(255,255,255,0.14)",
     justifyContent: "center",
     marginBottom: 16
   },
@@ -783,10 +789,10 @@ const styles = StyleSheet.create({
   },
   homeTitle: {
     color: colors.text,
-    fontSize: 42,
-    lineHeight: 44,
+    fontSize: 38,
+    lineHeight: 42,
     fontWeight: "900",
-    letterSpacing: -1.7
+    letterSpacing: 0
   },
   homeSubtitle: {
     color: colors.textSecondary,
@@ -801,12 +807,12 @@ const styles = StyleSheet.create({
     flexWrap: "wrap"
   },
   participantPill: {
-    backgroundColor: "rgba(255,255,255,0.08)",
+    backgroundColor: "rgba(255,255,255,0.075)",
     paddingHorizontal: 14,
     paddingVertical: 8,
     borderRadius: 999,
     borderWidth: 1,
-    borderColor: "rgba(255,255,255,0.1)"
+    borderColor: "rgba(255,255,255,0.14)"
   },
   participantText: {
     color: colors.text,
@@ -814,13 +820,13 @@ const styles = StyleSheet.create({
     fontSize: 13
   },
   stageSummary: {
-    height: 88,
-    borderRadius: 28,
+    height: 84,
+    borderRadius: 22,
     paddingHorizontal: 22,
     marginBottom: 24,
-    backgroundColor: "rgba(255,255,255,0.07)",
+    backgroundColor: "rgba(255,255,255,0.065)",
     borderWidth: 1,
-    borderColor: "rgba(255,255,255,0.1)",
+    borderColor: "rgba(255,255,255,0.14)",
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between"
@@ -833,7 +839,7 @@ const styles = StyleSheet.create({
   },
   summaryValue: {
     color: colors.text,
-    fontSize: 28,
+    fontSize: 26,
     fontWeight: "900"
   },
   summaryDivider: {
@@ -841,18 +847,20 @@ const styles = StyleSheet.create({
     height: 42,
     backgroundColor: "rgba(255,255,255,0.12)"
   },
-  categories: { gap: 22 },
+  categories: { gap: 16 },
   premiumCard: {
-    minHeight: 248,
-    borderRadius: 36,
-    padding: 22,
-    backgroundColor: "#0A66F5",
+    minHeight: 214,
+    borderRadius: 24,
+    padding: 20,
+    backgroundColor: "rgba(255,255,255,0.075)",
+    borderWidth: 1,
+    borderColor: "rgba(255,255,255,0.16)",
     overflow: "hidden",
     justifyContent: "space-between",
-    shadowColor: "#0A66F5",
+    shadowColor: colors.primary,
     shadowOffset: { width: 0, height: 18 },
-    shadowOpacity: 0.36,
-    shadowRadius: 30
+    shadowOpacity: 0.2,
+    shadowRadius: 28
   },
   cardPressed: {
     transform: [{ scale: 0.985 }],
@@ -860,12 +868,12 @@ const styles = StyleSheet.create({
   },
   cardGlow: {
     position: "absolute",
-    right: -60,
-    top: -90,
-    width: 210,
-    height: 210,
-    borderRadius: 210,
-    backgroundColor: "rgba(255,255,255,0.2)"
+    right: -54,
+    top: -80,
+    width: 190,
+    height: 190,
+    borderRadius: 190,
+    backgroundColor: "rgba(255,59,107,0.2)"
   },
   cardTop: {
     flexDirection: "row",
@@ -876,12 +884,14 @@ const styles = StyleSheet.create({
     paddingHorizontal: 13,
     height: 30,
     borderRadius: 999,
-    backgroundColor: "rgba(255,255,255,0.94)",
+    backgroundColor: "rgba(246,193,119,0.16)",
+    borderWidth: 1,
+    borderColor: "rgba(246,193,119,0.32)",
     justifyContent: "center",
     alignItems: "center"
   },
   stageBadgeText: {
-    color: "#FF2D55",
+    color: colors.gold,
     fontSize: 11,
     fontWeight: "900",
     letterSpacing: 0.8
@@ -890,7 +900,9 @@ const styles = StyleSheet.create({
     height: 38,
     paddingHorizontal: 15,
     borderRadius: 999,
-    backgroundColor: "rgba(255,255,255,0.24)",
+    backgroundColor: "rgba(255,255,255,0.09)",
+    borderWidth: 1,
+    borderColor: "rgba(255,255,255,0.14)",
     justifyContent: "center",
     alignItems: "center"
   },
@@ -901,10 +913,10 @@ const styles = StyleSheet.create({
   },
   cardTitle: {
     color: "#FFFFFF",
-    fontSize: 31,
-    lineHeight: 35,
+    fontSize: 27,
+    lineHeight: 32,
     fontWeight: "900",
-    letterSpacing: -1.1,
+    letterSpacing: 0,
     maxWidth: 310
   },
   cardDescription: {
@@ -914,16 +926,16 @@ const styles = StyleSheet.create({
     marginTop: 8
   },
   miniProgressTrack: {
-    height: 8,
+    height: 7,
     borderRadius: 999,
-    backgroundColor: "rgba(255,255,255,0.2)",
+    backgroundColor: "rgba(255,255,255,0.12)",
     overflow: "hidden",
     marginBottom: 14
   },
   miniProgressFill: {
     height: "100%",
     borderRadius: 999,
-    backgroundColor: "#FFFFFF"
+    backgroundColor: colors.primary
   },
   cardBottom: {
     flexDirection: "row",
@@ -932,9 +944,11 @@ const styles = StyleSheet.create({
   },
   answerPill: {
     flex: 1,
-    height: 52,
-    borderRadius: 999,
-    backgroundColor: "rgba(255,255,255,0.22)",
+    height: 50,
+    borderRadius: 16,
+    backgroundColor: "rgba(255,59,107,0.18)",
+    borderWidth: 1,
+    borderColor: "rgba(255,59,107,0.28)",
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
@@ -951,25 +965,25 @@ const styles = StyleSheet.create({
     fontWeight: "900"
   },
   actionCircle: {
-    width: 56,
-    height: 56,
-    borderRadius: 999,
-    backgroundColor: "#FFFFFF",
+    width: 50,
+    height: 50,
+    borderRadius: 16,
+    backgroundColor: "rgba(255,255,255,0.92)",
     justifyContent: "center",
     alignItems: "center"
   },
   actionIcon: {
-    color: "#0A66F5",
-    fontSize: 24,
+    color: "#161017",
+    fontSize: 22,
     fontWeight: "900"
   },
   lockedCard: {
-    minHeight: 210,
-    borderRadius: 36,
-    padding: 22,
-    backgroundColor: "rgba(255,255,255,0.055)",
+    minHeight: 184,
+    borderRadius: 24,
+    padding: 20,
+    backgroundColor: "rgba(255,255,255,0.045)",
     borderWidth: 1,
-    borderColor: "rgba(255,255,255,0.08)",
+    borderColor: "rgba(255,255,255,0.1)",
     justifyContent: "space-between",
     opacity: 0.82
   },
@@ -982,7 +996,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 13,
     height: 30,
     borderRadius: 999,
-    backgroundColor: "rgba(255,255,255,0.09)",
+    backgroundColor: "rgba(255,255,255,0.075)",
     justifyContent: "center"
   },
   lockedBadgeText: {
@@ -994,18 +1008,18 @@ const styles = StyleSheet.create({
   lockIconBox: {
     width: 42,
     height: 42,
-    borderRadius: 999,
-    backgroundColor: "rgba(255,255,255,0.08)",
+    borderRadius: 14,
+    backgroundColor: "rgba(255,255,255,0.075)",
     justifyContent: "center",
     alignItems: "center"
   },
   lockIcon: { fontSize: 18 },
   lockedTitle: {
     color: colors.textSecondary,
-    fontSize: 32,
-    lineHeight: 35,
+    fontSize: 28,
+    lineHeight: 32,
     fontWeight: "900",
-    letterSpacing: -1.2
+    letterSpacing: 0
   },
   lockedDescription: {
     color: colors.textMuted,
@@ -1021,10 +1035,10 @@ const styles = StyleSheet.create({
   backButton: {
     width: 46,
     height: 46,
-    borderRadius: 999,
-    backgroundColor: "rgba(255,255,255,0.09)",
+    borderRadius: 16,
+    backgroundColor: "rgba(255,255,255,0.075)",
     borderWidth: 1,
-    borderColor: "rgba(255,255,255,0.1)",
+    borderColor: "rgba(255,255,255,0.14)",
     justifyContent: "center",
     alignItems: "center"
   },
@@ -1044,14 +1058,14 @@ const styles = StyleSheet.create({
     color: colors.text,
     fontSize: 28,
     fontWeight: "900",
-    letterSpacing: -1
+    letterSpacing: 0
   },
   progressBox: {
-    borderRadius: 24,
+    borderRadius: 20,
     padding: 16,
-    backgroundColor: "rgba(255,255,255,0.07)",
+    backgroundColor: "rgba(255,255,255,0.065)",
     borderWidth: 1,
-    borderColor: "rgba(255,255,255,0.1)",
+    borderColor: "rgba(255,255,255,0.14)",
     marginBottom: 18
   },
   progressTop: {
@@ -1081,11 +1095,11 @@ const styles = StyleSheet.create({
     backgroundColor: colors.primary
   },
   questionCard: {
-    borderRadius: 34,
-    padding: 22,
-    backgroundColor: "rgba(255,255,255,0.08)",
+    borderRadius: 24,
+    padding: 20,
+    backgroundColor: "rgba(255,255,255,0.075)",
     borderWidth: 1,
-    borderColor: "rgba(255,255,255,0.12)",
+    borderColor: "rgba(255,255,255,0.16)",
     gap: 18
   },
   questionBadge: {
@@ -1104,17 +1118,17 @@ const styles = StyleSheet.create({
   },
   questionText: {
     color: colors.text,
-    fontSize: 25,
-    lineHeight: 34,
+    fontSize: 24,
+    lineHeight: 33,
     fontWeight: "900",
-    letterSpacing: -0.6
+    letterSpacing: 0
   },
   waitingBox: {
-    borderRadius: 24,
+    borderRadius: 20,
     padding: 18,
     backgroundColor: "rgba(255,255,255,0.06)",
     borderWidth: 1,
-    borderColor: "rgba(255,255,255,0.1)",
+    borderColor: "rgba(255,255,255,0.14)",
     gap: 6
   },
   waitingTitle: {
@@ -1131,11 +1145,11 @@ const styles = StyleSheet.create({
     gap: 14
   },
   answerCard: {
-    borderRadius: 24,
+    borderRadius: 20,
     padding: 18,
-    backgroundColor: "rgba(255,255,255,0.07)",
+    backgroundColor: "rgba(255,255,255,0.065)",
     borderWidth: 1,
-    borderColor: "rgba(255,255,255,0.1)",
+    borderColor: "rgba(255,255,255,0.14)",
     gap: 8
   },
   answerName: {

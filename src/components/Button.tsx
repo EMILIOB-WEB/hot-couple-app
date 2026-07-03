@@ -1,3 +1,4 @@
+import { LinearGradient } from "expo-linear-gradient";
 import { Pressable, StyleSheet, Text } from "react-native";
 import { colors } from "../theme/colors";
 
@@ -20,31 +21,47 @@ export function Button({
       disabled={disabled}
       style={({ pressed }) => [
         styles.button,
-        variant === "primary" ? styles.primary : styles.secondary,
+        variant === "secondary" && styles.secondary,
         pressed && styles.pressed,
         disabled && styles.disabled
       ]}
     >
-      <Text style={styles.text}>{title}</Text>
+      {variant === "primary" ? (
+        <LinearGradient
+          colors={[colors.hot, colors.primary, "#B23BFF"]}
+          start={{ x: 0, y: 0 }}
+          end={{ x: 1, y: 1 }}
+          style={styles.gradient}
+        >
+          <Text style={styles.text}>{title}</Text>
+        </LinearGradient>
+      ) : (
+        <Text style={styles.text}>{title}</Text>
+      )}
     </Pressable>
   );
 }
 
 const styles = StyleSheet.create({
   button: {
-    height: 56,
-    borderRadius: 999,
+    height: 58,
+    borderRadius: 18,
+    alignItems: "center",
+    justifyContent: "center",
+    overflow: "hidden"
+  },
+  gradient: {
+    width: "100%",
+    height: "100%",
     alignItems: "center",
     justifyContent: "center",
     paddingHorizontal: 20
   },
-  primary: {
-    backgroundColor: colors.primary
-  },
   secondary: {
-    backgroundColor: "rgba(255,255,255,0.1)",
+    backgroundColor: "rgba(255,255,255,0.08)",
     borderWidth: 1,
-    borderColor: colors.border
+    borderColor: "rgba(255,255,255,0.16)",
+    paddingHorizontal: 20
   },
   pressed: {
     transform: [{ scale: 0.98 }],
@@ -55,7 +72,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: colors.text,
-    fontSize: 17,
-    fontWeight: "700"
+    fontSize: 16,
+    fontWeight: "900"
   }
 });

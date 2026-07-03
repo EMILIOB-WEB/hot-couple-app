@@ -11,7 +11,7 @@ export function Screen({ children }: Props) {
   return (
     <View style={styles.root}>
       <LinearGradient
-        colors={["#160008", "#000000", "#090012"]}
+        colors={["#15070D", "#050507", "#0C0614"]}
         style={StyleSheet.absoluteFill}
       />
 
@@ -45,26 +45,26 @@ const styles = StyleSheet.create({
     maxWidth: 520,
     alignSelf: "center",
     minHeight: "100%",
-    paddingHorizontal: 22,
-    paddingTop: 56,
-    paddingBottom: 40
+    paddingHorizontal: 20,
+    paddingTop: 48,
+    paddingBottom: 44
   },
   glowTop: {
     position: "absolute",
-    top: -120,
-    right: -80,
-    width: 260,
-    height: 260,
-    borderRadius: 260,
-    backgroundColor: "rgba(255,45,85,0.26)"
+    top: -100,
+    right: -72,
+    width: 230,
+    height: 230,
+    borderRadius: 230,
+    backgroundColor: "rgba(255,59,107,0.18)"
   },
   glowBottom: {
     position: "absolute",
-    bottom: -160,
-    left: -120,
-    width: 320,
-    height: 320,
-    borderRadius: 320,
-    backgroundColor: "rgba(191,90,242,0.18)"
+    bottom: -130,
+    left: -128,
+    width: 300,
+    height: 300,
+    borderRadius: 300,
+    backgroundColor: "rgba(155,108,255,0.13)"
   }
 });

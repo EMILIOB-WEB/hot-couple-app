@@ -21,20 +21,22 @@ export function GlassCard({ children }: Props) {
 
 const styles = StyleSheet.create({
   card: {
-    borderRadius: 28,
-    padding: 20,
+    borderRadius: 24,
+    padding: 18,
     overflow: "hidden",
     borderWidth: 1,
     borderColor: colors.border,
-    backgroundColor: "rgba(28,28,30,0.58)"
+    backgroundColor: "rgba(17,17,22,0.72)"
   },
   webCard: {
-    borderRadius: 28,
-    padding: 20,
+    borderRadius: 24,
+    padding: 18,
     borderWidth: 1,
     borderColor: colors.border,
-    backgroundColor: "rgba(28,28,30,0.72)",
+    backgroundColor: "rgba(17,17,22,0.78)",
     // @ts-ignore web only
-    backdropFilter: "blur(24px)"
+    backdropFilter: "blur(28px)",
+    // @ts-ignore web only
+    boxShadow: "0 24px 70px rgba(0,0,0,0.38)"
   }
 });

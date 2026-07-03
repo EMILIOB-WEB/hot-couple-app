@@ -129,6 +129,10 @@ export default function HomeScreen() {
   return (
     <Screen>
       <View style={styles.hero}>
+        <View style={styles.brandMark}>
+          <View style={styles.brandMarkCore} />
+        </View>
+
         <View style={styles.badge}>
           <Text style={styles.eyebrow}>PRIVATE COUPLES GAME</Text>
         </View>
@@ -173,34 +177,59 @@ export default function HomeScreen() {
 
 const styles = StyleSheet.create({
   hero: {
-    marginBottom: 36
+    marginBottom: 28,
+    paddingTop: 14
+  },
+  brandMark: {
+    width: 58,
+    height: 58,
+    borderRadius: 20,
+    backgroundColor: "rgba(255,255,255,0.08)",
+    borderWidth: 1,
+    borderColor: "rgba(255,255,255,0.16)",
+    alignItems: "center",
+    justifyContent: "center",
+    marginBottom: 18
+  },
+  brandMarkCore: {
+    width: 24,
+    height: 24,
+    borderRadius: 12,
+    backgroundColor: colors.primary,
+    shadowColor: colors.primary,
+    shadowOffset: { width: 0, height: 8 },
+    shadowOpacity: 0.45,
+    shadowRadius: 18
   },
   badge: {
     alignSelf: "flex-start",
-    paddingHorizontal: 14,
-    paddingVertical: 8,
+    paddingHorizontal: 12,
+    paddingVertical: 7,
     borderRadius: 999,
-    backgroundColor: "rgba(255,45,85,0.12)",
-    marginBottom: 18
+    backgroundColor: "rgba(255,255,255,0.08)",
+    borderWidth: 1,
+    borderColor: "rgba(255,255,255,0.14)",
+    marginBottom: 20
   },
   eyebrow: {
-    color: colors.primary,
+    color: colors.gold,
     fontSize: 11,
     fontWeight: "900",
-    letterSpacing: 1.8
+    letterSpacing: 1.4
   },
   title: {
     color: colors.text,
-    fontSize: 50,
-    lineHeight: 54,
+    fontSize: 44,
+    lineHeight: 48,
     fontWeight: "900",
-    letterSpacing: -2,
+    letterSpacing: 0,
     marginBottom: 16
   },
   subtitle: {
     color: colors.textSecondary,
-    fontSize: 17,
-    lineHeight: 26
+    fontSize: 16,
+    lineHeight: 25,
+    maxWidth: 440
   },
   form: {
     gap: 18
@@ -214,7 +243,8 @@ const styles = StyleSheet.create({
     color: colors.textMuted,
     fontSize: 13,
     textAlign: "center",
-    lineHeight: 20
+    lineHeight: 20,
+    fontWeight: "700"
   },
   loaderContainer: {
     alignItems: "center",
@@ -228,11 +258,11 @@ const styles = StyleSheet.create({
     fontWeight: "600"
   },
   linkBox: {
-    borderRadius: 18,
+    borderRadius: 16,
     padding: 16,
-    backgroundColor: "rgba(255,255,255,0.08)",
+    backgroundColor: "rgba(255,255,255,0.065)",
     borderWidth: 1,
-    borderColor: "rgba(255,255,255,0.12)"
+    borderColor: "rgba(255,255,255,0.16)"
   },
   linkText: {
     color: colors.text,
